@@ -66,6 +66,8 @@
                 visibility: hidden;
                 opacity: 0;
                 pointer-events: none;
+            }
+          }
 
                 .modal {
                     width: 528px;
@@ -95,7 +97,6 @@
                         &:hover{
                             color: #007bff;
                           }
-                      }
 
                       .ij {
                         margin-top: 40px;
@@ -135,4 +136,4 @@
 
         }
       }
-  }
+  
