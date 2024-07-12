@@ -1,0 +1,21 @@
+.section-two1 {
+    margin-top: 94px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .section-two {
+            line-height: 60px;
+            letter-spacing: 6%;
+            font-weight: 500;
+            font-size: 14px;
+            vertical-align: top;
+            justify-content: space-between;
+            width: 24%;
+
+            
+          }
+      }
+  }
