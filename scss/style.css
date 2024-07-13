@@ -328,4 +328,38 @@
   vertical-align: top;
   justify-content: space-between;
   width: 24%;
+}
+.section-two1 .container .section-two #one::before {
+  content: "";
+  width: 100%;
+  height: 120px;
+  background-image: url("photos/group1.jpg");
+  background-repeat: no-repeat;
+  display: block;
+}
+.section-two1 .container .section-two #two::before {
+  content: "";
+  width: 100%;
+  height: 120px;
+  background-image: url("photos/group2.jpg");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.section-two1 {
+  margin-top: 94px;
+}
+.section-two1 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section-two1 .container .section-two {
+  line-height: 60px;
+  letter-spacing: 6%;
+  font-weight: 500;
+  font-size: 14px;
+  vertical-align: top;
+  justify-content: space-between;
+  width: 24%;
 }/*# sourceMappingURL=style.css.map */
