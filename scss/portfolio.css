@@ -127,9 +127,8 @@
   justify-content: center;
 }
 .section-one .container1 {
-  padding-top: 94px;
+  padding-top: 44px;
   width: 1170px;
-  padding: 0 15px;
   margin: 0 auto;
 }
 .section-one .container1 .container-button {
@@ -267,6 +266,7 @@
 }
 
 .footer {
+  color: #fff;
   background-color: rgb(38, 38, 38);
   padding: 94px 0;
   font-family: "Roboto", sans-serif;
