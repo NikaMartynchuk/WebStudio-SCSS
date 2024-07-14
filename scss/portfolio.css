@@ -275,7 +275,7 @@
   display: block;
 }
 .footer .section-three .container {
-  width: 1170px;
+  width: 1220px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -314,7 +314,7 @@
   font-size: 14px;
   display: flex;
 }
-.footer .section-three .container .w .icon-div .foote-p .ico {
+.footer .section-three .container .w .icon-div .ico {
   font-size: 20px;
   color: rgb(175, 177, 184);
   margin-bottom: 44px;
@@ -323,22 +323,22 @@
   background-color: #454545;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .section-three .container .w .icon-div .foote-p .ico:hover {
+.footer .section-three .container .w .icon-div .ico:hover {
   cursor: pointer;
   color: white;
   background-color: #2196F3;
 }
-.footer .section-three .container .w .subscription-container {
+.footer .section-three .container .subscription-container {
   text-align: center;
   margin-top: 10px;
 }
-.footer .section-three .container .w .subscription-container .subscription-form {
+.footer .section-three .container .subscription-container .subscription-form {
   margin-left: 93px;
 }
-.footer .section-three .container .w .subscription-container .subscription-form label {
+.footer .section-three .container .subscription-container .subscription-form label {
   font-size: 14px;
 }
-.footer .section-three .container .w .subscription-container .subscription-form .f00te-p {
+.footer .section-three .container .subscription-container .subscription-form .f00te-p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -346,24 +346,25 @@
   color: white;
   display: flex;
 }
-.footer .section-three .container .w .subscription-container .subscription-form .input-group {
+.footer .section-three .container .subscription-container .subscription-form .input-group {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .section-three .container .w .subscription-container .subscription-form .input-groupinput {
+.footer .section-three .container .subscription-container .subscription-form .input-group .rg {
+  padding-left: 28px;
   background-color: rgb(38, 38, 38);
   border: solid #616161 3px;
   border-radius: 5px 5px 5px 5px;
   font-size: 16px;
   width: 358px;
-  Height: 53px;
+  height: 53px;
+  color: #FFFFFF;
 }
-.footer .section-three .container .w .subscription-container .subscription-form .input-groupinput:focus,
-.footer .section-three .container .w .subscription-container .subscription-form .input-groupinput .input-group button:focus {
+.footer .section-three .container .subscription-container .subscription-form .input-group .rg:focus {
   outline: none;
 }
-.footer .section-three .container .w .subscription-container .subscription-form .input-group .input-group button {
+.footer .section-three .container .subscription-container .subscription-form .input-group .rr {
   border: none;
   border-radius: 5px 5px;
   background-color: #007bff;
@@ -372,8 +373,6 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-}
-.footer .section-three .container .w .subscription-container .subscription-form .input-group form button[type=submit-one] {
   margin-bottom: 19px;
   margin-top: 19px;
   margin-left: 18px;

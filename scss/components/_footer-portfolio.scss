@@ -8,8 +8,8 @@
         display: block;
 
         .container {
-            width: 1170px;
-            padding: 0 15px;z
+            width: 1220px;
+            padding: 0 15px;
             margin: 0 auto;
 
 
@@ -50,6 +50,7 @@
                         font-weight: 500;
                         font-size: 14px;
                         display: flex;
+                    }
 
                         .ico {
                             font-size: 20px;
@@ -95,21 +96,22 @@
                             justify-content: center;
                             align-items: center;
 
-                            &input {
+                            .rg {
+                                padding-left: 28px;
                                 background-color: rgb(38, 38, 38);
                                 border: solid #616161 3px;
                                 border-radius: 5px 5px 5px 5px;
                                 font-size: 16px;
                                 width: 358px;
-                                Height: 53px;
+                                height: 53px;
+                                color: #FFFFFF;
 
-                                &:focus,
-                                .input-group button:focus {
+                                &:focus {
                                     outline: none;
                                 }
                             }
 
-                            .input-group button {
+                            .rr {
                                 border: none;
                                 border-radius: 5px 5px;
                                 background-color: #007bff;
@@ -118,9 +120,6 @@
                                 cursor: pointer;
                                 display: flex;
                                 align-items: center;
-                              }
-
-                              form button[type="submit-one"] {
                                 margin-bottom: 19px;
                                 margin-top: 19px;
                                 margin-left: 18px;
@@ -133,8 +132,6 @@
                                 border: none;
                                 animation: myAnim 2s ease 0s 10000 normal forwards;
                               }
-                              
-
                         }
                     }
                 }
@@ -142,4 +139,3 @@
         }
 
     }
-}
