@@ -50,6 +50,8 @@
             cursor: pointer;
           }
 
+
+
           .backdrop {
             position: fixed;
             top: 0;
@@ -96,143 +98,185 @@
                         &:hover{
                             color: #007bff;
                           }
-
-                      .ij {
-                        margin-top: 40px;
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-size: 20px;
-                        font-weight: 600;
-                        color: black;
-                      }
                   }
               }
 
-        }
+              .ij {
+                margin-top: 40px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-size: 20px;
+                font-weight: 600;
+                color: #000000;
+              }
 
 
-        .int {
-          background-image: url(svg/icomoon/demo-files/);
-          font-family: 'Roboto';
-          font-style: normal;
-          font-weight: 400;
-          color: #757575;
-          color: #454545;
-          display: flex;
-          padding-left: 30px;
-          padding-top: 10px;
-          padding-bottom: 1px;
-        }
-
-        .q:focus-within .rrt {
-          color: #2196F3;
-        }
-        
-        .q:focus-within .rt {
-          color: #2196F3;
-        }
-        
-        .q:focus-within .rtt {
-          color: #2196F3;
-        }
-
-        form input,
-form textarea {
-  width: 468px;
-  padding: 8px;
-  box-sizing: border-box;
-  padding-left: 22px;
-}
-
-.q:focus-within .rrt {
-  color: #2196F3;
-}
-
-.q:focus-within .rt {
-  color: #2196F3;
-}
-
-.q:focus-within .rtt {
-  color: #2196F3;
-}
-
-input[type=text]:focus {
-  border: 2px solid #2196F3;
-  border-radius: 2px;
-  outline-width: 0;
-  color: #000000;
-}
-
-.form input,
-form textarea:last-child {
-  height: 120px;
-}
-
-input[type=tel]:focus {
-  border: 2px solid #2196F3;
-  border-radius: 2px;
-  outline-width: 0;
-  color: #000000;
-}
-
-input[type=text]:focus {
-  border: 2px solid #2196F3;
-  border-radius: 2px;
-  outline-width: 0;
-  color: #000000;
-}
-
-textarea[type=email]:focus {
-  border: 2px solid #2196F3;
-  border-radius: 2px;
-  outline-width: 0;
-  color: #000000;
-}
-
-.ii:focus{
-  border: 2px solid #2196F3;
-}
-
-.iit {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  color: #757575;
-  padding-top: 10px;
-}
-
-#ig {
-  width: 20px;
-}
-
-.pad {
-  color: #007bff;
-}
-
-form button[type="submit"] {
-  margin-bottom: 40px;
-  margin-top: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 48px;
-  padding-left: 48px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px 5px;
-
-
-  &:hover {
-    background-color: #0056b3;
-  
-  }
-}
-
-
-
-
-
+              .int {
+                background-image: url(svg/icomoon/demo-files/);
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                color: #757575;
+                color: #454545;
+                display: flex;
+                padding-left: 30px;
+                padding-top: 17px;
+                padding-bottom: 1px;
+              }
+      
+              .q:focus-within .rrt {
+                color: #2196F3;
+              }
+              
+              .q:focus-within .rt {
+                color: #2196F3;
+              }
+              
+              .q:focus-within .rtt {
+                color: #2196F3;
+              }
+      
+              form input,
+      form textarea {
+        width: 468px;
+        padding: 8px;
+        box-sizing: border-box;
+        padding-left: 22px;
       }
-  
+      
+      .q:focus-within .rrt {
+        color: #2196F3;
+      }
+      
+      .q:focus-within .rt {
+        color: #2196F3;
+      }
+      
+      .q:focus-within .rtt {
+        color: #2196F3;
+      }
+      
+      input[type=text]:focus {
+        border: 2px solid #2196F3;
+        border-radius: 2px;
+        outline-width: 0;
+        color: #000000;
+      }
+      
+      .form input,
+      form textarea:last-child {
+        height: 120px;
+      }
+      
+      input[type=tel]:focus {
+        border: 2px solid #2196F3;
+        border-radius: 2px;
+        outline-width: 0;
+        color: #000000;
+      }
+      
+      input[type=text]:focus {
+        border: 2px solid #2196F3;
+        border-radius: 2px;
+        outline-width: 0;
+        color: #000000;
+      }
+      
+      textarea[type=email]:focus {
+        border: 2px solid #2196F3;
+        border-radius: 2px;
+        color: #000000;
+        outline-width: 0;
+      }
+      
+      .ii:focus{
+        border: 2px solid #2196F3;
+      }
+
+      #ig{
+        width: 20px;
+      }
+      
+      .iit {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: #757575;
+        padding-top: 10px;
+      }
+      
+
+      
+      .pad {
+        color: #007bff;
+      }
+      
+      form button[type="submit"] {
+        margin-bottom: 40px;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 48px;
+        padding-left: 48px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px 5px;
+      
+      
+        &:hover {
+          background-color: #0056b3;
+        
+        }
+      }
+
+      .rtt {
+        color: black;
+        font-size: 15px;
+        position: absolute;
+        left: 37px;
+        top: 170px;
+      }
+
+      .rrt {
+        color: black;
+        font-size: 19px;
+        position: absolute;
+        left: 35px;
+        top: 101px;
+
+        &:focus {
+          color: #2196F3;
+        }
+      }
+
+      .rt {
+        color: black;
+        font-size: 12px;
+        position: absolute;
+        left: 37px;
+        top: 237px;
+      }
+      
+            }      
+
+        }
+        @keyframes myAnim {
+          0% {
+            transform: scale(1);
+          }
+        
+          50% {
+            transform: scale(1.1);
+          }
+        
+          100% {
+            transform: scale(1);
+          }
+        }
+      

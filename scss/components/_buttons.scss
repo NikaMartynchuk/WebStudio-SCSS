@@ -1,0 +1,53 @@
+.section-one {
+    justify-content: center;
+
+    .container1 {
+        padding-top: 94px;
+        width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+
+        .container-button {
+            justify-content: center;
+            display: flex;
+          }
+      }
+      
+      .main-button {
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        background-color: #F5F4FA;
+        color: black;
+        border: 0px;
+        border-radius: 10px 10px;
+        margin-right: 20px;
+        padding: 10px 32px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        justify-content: center;
+        animation: myAnim 2s ease 0s 10000 normal forwards;
+
+        &:hover {
+            background-color: #2196F3;
+            color: white;
+            box-shadow: 0px 2px 5px #989898;
+            cursor: pointer;
+          }
+      }
+  }
+
+  @keyframes myAnim{
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

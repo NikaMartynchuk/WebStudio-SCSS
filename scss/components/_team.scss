@@ -1,0 +1,84 @@
+.section-four {
+    background-color: #F5F4FA;
+    padding: 161px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .container {
+        width: 1270px;
+        padding: 0 15px;
+        margin: 0 auto;
+
+        .mainn-h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 44px;
+            font-weight: 900;
+            text-align: center;
+            line-height: 136%;
+            margin-bottom: 50px;
+          }
+
+          .section-four-wrap {
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+
+            .section-four-item {
+                background-color: white;
+                text-align: center;
+                box-shadow: 0px 1px 5px #dddddd;
+                
+
+                .main-h3 {
+                    font-family: 'Roboto', sans-serif;
+                    padding-bottom: 10.15px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-top: 30px;
+                  }
+
+                  .main-p {
+                    font-family: 'Roboto', sans-serif;
+                    padding-bottom: 30.46px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #757575;
+                    animation: anim 2s ease 0s 1 normal forwards;
+                  }
+
+
+                  .section-four-link-list {
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    .icon {
+                        font-size: 20px;
+                        color: rgba(175, 177, 184, 1);
+                        margin-bottom: 44px;
+                        padding: 10px;
+                        border-radius: 50%;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                            background-color: #2196F3;
+                          }
+
+                          &{
+                            transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1),  color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+                          }
+                      }
+                      
+                  }
+              }
+
+              .section-four-link-list {
+                display: flex;
+                justify-content: space-evenly;
+              }
+          }
+
+      }
+  }
