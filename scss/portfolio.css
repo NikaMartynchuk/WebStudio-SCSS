@@ -275,7 +275,8 @@
   display: block;
 }
 .footer .section-three .container {
-  width: 1220px;
+  display: flex;
+  justify-content: center;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -299,7 +300,10 @@
   padding-left: 15px;
   font-weight: 400;
   font-size: 14px;
-  padding-bottom: 9px;
+  padding-bottom: 16px;
+}
+.footer .section-three .container .w .footer-div .nn {
+  color: #616161;
 }
 .footer .section-three .container .w .icon-div {
   margin-left: 105px;
@@ -357,8 +361,8 @@
   border: solid #616161 3px;
   border-radius: 5px 5px 5px 5px;
   font-size: 16px;
-  width: 358px;
-  height: 53px;
+  width: 308px;
+  height: 46px;
   color: #FFFFFF;
 }
 .footer .section-three .container .subscription-container .subscription-form .input-group .rg:focus {

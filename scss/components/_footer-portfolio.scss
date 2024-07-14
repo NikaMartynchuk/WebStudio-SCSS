@@ -1,6 +1,6 @@
 .footer {
-    color: #fff;
-    background-color: rgb(38, 38, 38);
+    color: $root-color-two;
+    background-color: $root-color;
     padding: 94px 0;
     font-family: 'Roboto', sans-serif;
 
@@ -8,7 +8,8 @@
         display: block;
 
         .container {
-            width: 1220px;
+            display: flex;
+            justify-content: center;
             padding: 0 15px;
             margin: 0 auto;
 
@@ -30,12 +31,17 @@
                     }
 
                     .footer-p {
-                        color: white;
+                        color: $root-color-two;
                         padding-left: 15px;
                         font-weight: 400;
                         font-size: 14px;
-                        padding-bottom: 9px;
+                        padding-bottom: 16px;
                     }
+
+                    .nn {
+                        color: #616161;
+                    }
+
                 }
 
                 .icon-div {
@@ -43,7 +49,7 @@
                     margin-top: 10px;
 
                     .foote-p {
-                        color: #FFFFFF;
+                        color: $root-color-two;
                         margin-bottom: 30px;
                         font-family: 'Roboto';
                         font-style: normal;
@@ -63,8 +69,8 @@
 
                         &:hover {
                             cursor: pointer;
-                            color: white;
-                            background-color: #2196F3;
+                            color: $root-color-two;
+                            background-color: $accent-color;
                         }
                     }
                 }
@@ -87,7 +93,7 @@
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
-                        color: white;
+                        color: $root-color-two;
                         display: flex;
                     }
 
@@ -98,13 +104,13 @@
 
                         .rg {
                             padding-left: 28px;
-                            background-color: rgb(38, 38, 38);
+                            background-color: $root-color;
                             border: solid #616161 3px;
                             border-radius: 5px 5px 5px 5px;
                             font-size: 16px;
-                            width: 358px;
-                            height: 53px;
-                            color: #FFFFFF;
+                            width: 308px;
+                            height: 46px;
+                            color: $root-color-two;
 
                             &:focus {
                                 outline: none;
@@ -114,8 +120,8 @@
                         .rr {
                             border: none;
                             border-radius: 5px 5px;
-                            background-color: #007bff;
-                            color: #fff;
+                            background-color: $accent-color;
+                            color: $root-color-two;
                             font-size: 16px;
                             cursor: pointer;
                             display: flex;
@@ -127,8 +133,8 @@
                             padding-bottom: 15px;
                             padding-right: 48px;
                             padding-left: 48px;
-                            background-color: #007bff;
-                            color: #fff;
+                            background-color: $accent-color;
+                            color: $root-color-two;
                             border: none;
                             animation: myAnim 2s ease 0s 10000 normal forwards;
                         }
