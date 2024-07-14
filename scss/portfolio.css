@@ -384,4 +384,7 @@
   color: #fff;
   border: none;
   animation: myAnim 2s ease 0s 10000 normal forwards;
+}
+.footer .section-three .container .subscription-container .subscription-form .input-group .y {
+  padding-left: 8px;
 }/*# sourceMappingURL=portfolio.css.map */
