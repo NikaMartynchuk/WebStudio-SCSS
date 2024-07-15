@@ -1,6 +1,6 @@
 .footer {
     font-family: 'Roboto', sans-serif;
-    background-color: $root-color;
+    background-color: $footer-color;
     padding: 94px 0;
 
     .fo-div {
@@ -24,7 +24,7 @@
 
 
             .footer-text {
-                color: #757575;
+                color: $text-color;
                 margin: 16px;
             }
         }
@@ -42,11 +42,11 @@
 
             .ico {
                 font-size: 20px;
-                color: rgba(175, 177, 184, 1);
+                color: $shadow-color;
                 margin-bottom: 44px;
                 padding: 10px;
                 border-radius: 50%;
-                background-color: #454545;
+                background-color: $icon-color;
 
                 &:hover {
                     cursor: pointer;
@@ -85,8 +85,8 @@
                     align-items: center;
 
                     & input {
-                        background-color: $root-color;
-                        border: solid #616161 4px;
+                        background-color: $footer-color;
+                        border: solid $text-color 4px;
                         border-radius: 5px 5px 5px 5px;
                         font-size: 16px;
                         width: 358px;

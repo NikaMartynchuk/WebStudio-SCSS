@@ -4,13 +4,13 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-.header .header__nav {
+.header .header-navigation {
   list-style: none;
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
 }
-.header .header__nav .header__logo {
+.header .header-navigation .header-a {
   font-size: 14px;
   line-height: 61.41%;
   display: flex;
@@ -18,28 +18,11 @@
   text-decoration: none;
   margin-right: 40px;
 }
-.header .header__nav .header__navigation-center {
+.header .header-navigation .navigation-center {
   display: flex;
   margin-right: 84px;
 }
-.header .header__nav .header__navigation-center .header__link {
-  animation: anim 2s ease 0s 1 normal forwards;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  letter-spacing: 6%;
-  align-content: center;
-  font-weight: 500;
-  font-size: 14px;
-  margin-right: 50px;
-  color: black;
-  vertical-align: top;
-  position: relative;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header .header__nav .header__navigation-center .header__link--active {
+.header .header-navigation .navigation-center .header-a1 {
   animation: anim 2s ease 0s 1 normal forwards;
   display: flex;
   justify-content: space-between;
@@ -57,7 +40,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .header__nav .header__navigation-center .header__link--active:hover:after {
+.header .header-navigation .navigation-center .header-a1:hover:after {
   content: "";
   position: absolute;
   left: 0;
@@ -68,13 +51,13 @@
   background-color: #3791db;
   transition: background-color 250ms ease;
 }
-.header .header__nav .header__navigation-center .header__link--active:hover {
+.header .header-navigation .navigation-center .header-a1:hover {
   color: #3791db;
 }
-.header .header__nav .header__navigation-center .header__link--active.header__link--active {
+.header .header-navigation .navigation-center .header-a1.xc {
   color: #3791db;
 }
-.header .header__nav .header__navigation-center .header__link--active:after {
+.header .header-navigation .navigation-center .header-a1:after {
   content: "";
   position: absolute;
   left: 0;
@@ -84,34 +67,33 @@
   height: 4px;
   background-color: #3791db;
 }
-.header .header__navigation-right {
+.header .navigation-right {
   display: flex;
   margin-right: 20px;
   margin-left: 10px;
 }
-.header .header__navigation-right .header__contact {
+.header .navigation-right .ic {
   display: flex;
   animation: anim 2s ease 0s 1 normal forwards;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .header__navigation-right .header__contact span, .header .header__navigation-right .header__contact a {
+.header .navigation-right .ic span, .header .navigation-right .ic a {
   color: black;
   transition: color 0.3s;
   outline: none;
 }
-.header .header__navigation-right .header__contact:hover span, .header .header__navigation-right .header__contact:hover a {
+.header .navigation-right .ic:hover span, .header .navigation-right .ic:hover a {
   color: #3791db;
 }
-.header .header__navigation-right .header__contact:hover {
+.header .navigation-right .ic:hover {
   color: #3791db;
 }
-.header .header__navigation-right .header__contact .header__icon--email,
-.header .header__navigation-right .header__contact .header__icon--phone {
+.header .navigation-right .ic .smm {
   font-size: 1;
   padding-right: 10px;
 }
-.header .header__navigation-right .header__tel {
+.header .navigation-right .header-tel {
   display: flex-end;
   justify-content: space-between;
   align-items: center;
@@ -126,28 +108,28 @@
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .header__navigation-right .header__tel:hover {
+.header .navigation-right .header-tel:hover {
   color: #3791db;
 }
-.header .header__navigation-right .header__icon--phone {
+.header .navigation-right .icon-Vector {
   margin-left: 65px;
 }
 
-.intro {
+.section-one {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.247), rgba(47, 48, 58, 0.247)), url(../photos/img16.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   padding: 140px 0;
 }
-.intro .intro__article {
+.section-one .main-article {
   position: relative;
   z-index: 3;
   color: white;
   text-align: center;
   padding: 50px;
 }
-.intro .intro__article .intro__title {
+.section-one .main-article .main-h1 {
   font-family: "Roboto", sans-serif;
   line-height: 60%;
   animation: anim 2s ease 0s 1 normal forwards;
@@ -160,7 +142,7 @@
   line-height: 136%;
   display: flex;
 }
-.intro .intro__article .intro__button {
+.section-one .main-article .btn {
   animation: myAnim 2s ease 0s 1000 normal forwards;
   background-color: white;
   border: 0;
@@ -180,7 +162,7 @@
   padding: 10px 32px;
   cursor: pointer;
 }
-.intro .backdrop {
+.section-one .main-article .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -190,12 +172,12 @@
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.intro .backdrop.is-hidden {
+.section-one .main-article .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
-.intro .modal {
+.section-one .main-article .modal {
   width: 528px;
   position: fixed;
   top: 50%;
@@ -211,7 +193,7 @@
   border-radius: 5px;
   box-shadow: 0 2px 10px black;
 }
-.intro .modal .modal__close {
+.section-one .main-article .modal .close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -220,10 +202,10 @@
   font-size: 24px;
   cursor: pointer;
 }
-.intro .modal .modal__close:hover {
+.section-one .main-article .modal .close-btn:hover {
   color: #3791db;
 }
-.intro .modal__title {
+.section-one .main-article .ij {
   margin-top: 40px;
   font-family: "Roboto";
   font-style: normal;
@@ -231,7 +213,7 @@
   font-weight: 600;
   color: black;
 }
-.intro .modal__label {
+.section-one .main-article .int {
   background-image: url(svg/icomoon/demo-files/);
   font-family: "Roboto";
   font-style: normal;
@@ -243,66 +225,66 @@
   padding-top: 17px;
   padding-bottom: 1px;
 }
-.intro .modal__div:focus-within .rrt {
+.section-one .main-article .q:focus-within .rrt {
   color: #3791db;
 }
-.intro .modal__div:focus-within .rt {
+.section-one .main-article .q:focus-within .rt {
   color: #3791db;
 }
-.intro .modal__div:focus-within .rtt {
+.section-one .main-article .q:focus-within .rtt {
   color: #3791db;
 }
-.intro form input,
-.intro form textarea {
+.section-one .main-article form input,
+.section-one .main-article form textarea {
   width: 468px;
   padding: 8px;
   box-sizing: border-box;
   padding-left: 22px;
 }
-.intro .modal__div:focus-within .rrt {
+.section-one .main-article .q:focus-within .rrt {
   color: #3791db;
 }
-.intro .modal__div:focus-within .rt {
+.section-one .main-article .q:focus-within .rt {
   color: #3791db;
 }
-.intro .modal__div:focus-within .rtt {
+.section-one .main-article .q:focus-within .rtt {
   color: #3791db;
 }
-.intro input[type=text]:focus {
+.section-one .main-article input[type=text]:focus {
   border: 2px solid #3791db;
   border-radius: 2px;
   outline-width: 0;
   color: black;
 }
-.intro .form input,
-.intro form textarea:last-child {
+.section-one .main-article .form input,
+.section-one .main-article form textarea:last-child {
   height: 120px;
 }
-.intro input[type=tel]:focus {
+.section-one .main-article input[type=tel]:focus {
   border: 2px solid #3791db;
   border-radius: 2px;
   outline-width: 0;
   color: black;
 }
-.intro input[type=text]:focus {
+.section-one .main-article input[type=text]:focus {
   border: 2px solid #3791db;
   border-radius: 2px;
   outline-width: 0;
   color: black;
 }
-.intro textarea[type=email]:focus {
+.section-one .main-article textarea[type=email]:focus {
   border: 2px solid #3791db;
   border-radius: 2px;
   color: black;
   outline-width: 0;
 }
-.intro .modal__textarea:focus {
+.section-one .main-article .ii:focus {
   border: 2px solid #3791db;
 }
-.intro #agreement {
+.section-one .main-article #ig {
   width: 20px;
 }
-.intro .modal__label--checkbox {
+.section-one .main-article .iit {
   justify-content: center;
   display: flex;
   align-items: center;
@@ -313,10 +295,10 @@
   color: #757575;
   padding-top: 10px;
 }
-.intro .modal__link {
+.section-one .main-article .pad {
   color: #3791db;
 }
-.intro form button[type=modal__submito] {
+.section-one .main-article form button[type=submit] {
   margin-bottom: 40px;
   margin-top: 20px;
   padding-top: 15px;
@@ -329,27 +311,27 @@
   cursor: pointer;
   border-radius: 5px 5px;
 }
-.intro form button[type=modal__submito]:hover {
+.section-one .main-article form button[type=submit]:hover {
   background-color: #3791db;
 }
-.intro .rtt {
+.section-one .main-article .rtt {
   color: black;
   font-size: 15px;
   position: absolute;
   left: 37px;
   top: 170px;
 }
-.intro .rrt {
+.section-one .main-article .rrt {
   color: black;
   font-size: 19px;
   position: absolute;
   left: 35px;
   top: 101px;
 }
-.intro .rrt:focus {
+.section-one .main-article .rrt:focus {
   color: #3791db;
 }
-.intro .rt {
+.section-one .main-article .rt {
   color: black;
   font-size: 12px;
   position: absolute;
@@ -467,7 +449,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: white;
-  background-color: rgba(0, 0, 0, 0.529);
+  background-color: black;
 }
 .section-three .bac-text {
   margin: 0 auto;
@@ -485,7 +467,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: white;
-  background-color: rgba(0, 0, 0, 0.529);
+  background-color: black;
 }
 
 .section-four {
@@ -714,4 +696,4 @@
 }
 .footer .fo-div .subscription-container .subscription-form .input-group button .y {
   margin-left: 10px;
-}/*# sourceMappingURL=style.css.map */
+}

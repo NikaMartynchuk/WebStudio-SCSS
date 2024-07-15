@@ -39,7 +39,7 @@
                     }
 
                     .nn {
-                        color: #616161;
+                        color: $text-color;
                     }
 
                 }
@@ -60,7 +60,7 @@
 
                     .ico {
                         font-size: 20px;
-                        color: rgba(175, 177, 184, 1);
+                        color: $shadow-color;
                         margin-bottom: 44px;
                         padding: 10px;
                         border-radius: 50%;

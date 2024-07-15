@@ -15,8 +15,8 @@
     justify-content: space-between;
 
     .sm {
-        border: solid rgba(175, 177, 184, 1) 3px;
-        color: rgba(175, 177, 184, 1);
+        border: solid $shadow-color 3px;
+        color: $clients-color;
         margin-top: 78px;
         margin-bottom: 120px;
         font-size: 46px;
