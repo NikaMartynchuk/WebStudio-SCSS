@@ -180,49 +180,6 @@
   padding: 10px 32px;
   cursor: pointer;
 }
-.intro .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.intro .backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.intro .modal {
-  width: 528px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  background-color: white;
-  transform: translate(-50%, -50%);
-  border-radius: 5px 5px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px black;
-}
-.intro .modal .modal__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-.intro .modal .modal__close:hover {
-  color: #3791db;
-}
 .intro .modal__title {
   margin-top: 40px;
   font-family: "Roboto";
@@ -355,6 +312,51 @@
   position: absolute;
   left: 37px;
   top: 237px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  width: 528px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  border-radius: 5px 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px black;
+}
+.modal .modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modal .modal__close:hover {
+  color: #3791db;
 }
 
 @keyframes myAnim {
