@@ -12,7 +12,7 @@
         margin: 0 auto;
 
         .team__title {
-            font-family: 'Roboto', sans-serif;
+            font-family: $font-face;
             font-size: 44px;
             font-weight: 900;
             text-align: center;
@@ -32,7 +32,7 @@
                 
 
                 .team__name {
-                    font-family: 'Roboto', sans-serif;
+                    font-family: $font-face;
                     padding-bottom: 10.15px;
                     font-size: 16px;
                     font-weight: 500;
@@ -40,7 +40,7 @@
                   }
 
                   .team__role {
-                    font-family: 'Roboto', sans-serif;
+                    font-family: $font-face;
                     padding-bottom: 30.46px;
                     font-size: 16px;
                     font-weight: 400;

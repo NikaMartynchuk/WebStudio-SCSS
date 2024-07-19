@@ -3,27 +3,27 @@
   display: flex;
   justify-content: center;
 }
-.header .header-a1 {
+.header .header__logo {
   display: flex;
   align-items: center;
   margin-right: 40px;
   margin-left: 20px;
 }
-.header .section {
+.header .header__section {
   list-style: none;
   display: flex;
 }
-.header .section .header-navigation {
+.header .header__section .header__navigation {
   list-style: none;
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
 }
-.header .section .header-navigation .header-a {
+.header .header__section .header__navigation .header__link {
   height: 16px;
   left: 548px;
   top: 32px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -33,19 +33,19 @@
   display: flex;
   margin-right: 50px;
   align-items: center;
-  color: #212121;
+  color: black;
 }
-.header .section .header-navigation .header-a:hover {
-  color: #2196F3;
+.header .header__section .header__navigation .header__link:hover {
+  color: #3791db;
   cursor: pointer;
 }
-.header .section .header-navigation .header-a:hover {
+.header .header__section .header__navigation .header__link:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .section .header-navigation .n {
+.header .header__section .header__navigation .header__link--active {
   animation: anim 2s ease 0s 1 normal forwards;
 }
-.header .section .header-navigation .n:hover:after {
+.header .header__section .header__navigation .header__link--active:hover:after {
   content: "";
   position: absolute;
   left: 0;
@@ -53,95 +53,95 @@
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #44acff;
+  background-color: #3791db;
   transition: background-color 250ms ease;
 }
-.header .section .header-navigation #e::after {
+.header .header__section .header__navigation #e::after {
   content: "";
   position: absolute;
   top: 68px;
   display: block;
   width: 74px;
   height: 4px;
-  background-color: #44acff;
+  background-color: #3791db;
 }
-.header .section .header-navigation .o {
-  color: #44acff;
+.header .header__section .header__navigation .header__link-text {
+  color: #3791db;
   animation: anim 2s ease 0s 1 normal forwards;
 }
-.header .section .header-navigation .navigation-right {
+.header .header__section .header__navigation .header__navigation-right {
   display: flex;
   margin-right: 40px;
 }
-.header .section .header-navigation .navigation-right .ic {
+.header .header__section .header__navigation .header__navigation-right .header__contact {
   display: flex;
   align-items: center;
   animation: anim 2s ease 0s 1 normal forwards;
 }
-.header .section .header-navigation .navigation-right .ic span, .header .section .header-navigation .navigation-right .ic a {
+.header .header__section .header__navigation .header__navigation-right .header__contact span, .header .header__section .header__navigation .header__navigation-right .header__contact a {
   color: black;
   transition: color 0.3s;
   outline: none;
 }
-.header .section .header-navigation .navigation-right .ic:hover span, .header .section .header-navigation .navigation-right .ic:hover a {
-  color: #2196F3;
+.header .header__section .header__navigation .header__navigation-right .header__contact:hover span, .header .header__section .header__navigation .header__navigation-right .header__contact:hover a {
+  color: #3791db;
 }
-.header .section .header-navigation .navigation-right .ic:hover {
-  color: #2196F3;
+.header .header__section .header__navigation .header__navigation-right .header__contact:hover {
+  color: #3791db;
 }
-.header .section .header-navigation .navigation-right .ic .icon-envelope1 {
+.header .header__section .header__navigation .header__navigation-right .header__contact .icon-envelope1 {
   margin-left: 87px;
 }
-.header .section .header-navigation .navigation-right .ic .icon-Vector {
+.header .header__section .header__navigation .header__navigation-right .header__contact .icon-Vector {
   margin-left: 65px;
 }
-.header .section .header-navigation .navigation-right .ic .smm {
+.header .header__section .header__navigation .header__navigation-right .header__contact .header__icon {
   padding-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .section .header-navigation .navigation-right .ic .header-tel {
-  color: #212121;
+.header .header__section .header__navigation .header__navigation-right .header__contact .header__email {
+  color: black;
   font-size: 14px;
   text-decoration: none;
 }
-.header .section .header-navigation .navigation-right .ic .header-tel:hover {
-  color: #2196F3;
+.header .header__section .header__navigation .header__navigation-right .header__contact .header__email:hover {
+  color: #3791db;
 }
-.header .section .header-navigation .navigation-right .ic .header-tel {
+.header .header__section .header__navigation .header__navigation-right .header__contact .header__email {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .section .header-navigation .navigation-right .ic .header-tel1 {
+.header .header__section .header__navigation .header__navigation-right .header__contact .header__phone {
   align-items: center;
-  color: #212121;
+  color: black;
   font-size: 14px;
   text-decoration: none;
 }
-.header .section .header-navigation .navigation-right .ic:hover {
-  color: #2196F3;
+.header .header__section .header__navigation .header__navigation-right .header__contact:hover {
+  color: #3791db;
 }
-.header .section .header-navigation .navigation-right .ic {
+.header .header__section .header__navigation .header__navigation-right .header__contact {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-one {
+.filters {
   justify-content: center;
 }
-.section-one .container1 {
+.filters .filters__container {
   padding-top: 44px;
   width: 1170px;
   margin: 0 auto;
 }
-.section-one .container1 .container-button {
+.filters .filters__container .filters__button-group {
   justify-content: center;
   display: flex;
 }
-.section-one .main-button {
-  font-family: "Roboto";
+.filters .filters__button {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
-  background-color: #F5F4FA;
+  background-color: rgb(244, 244, 244);
   color: black;
   border: 0px;
   border-radius: 10px 10px;
@@ -151,8 +151,8 @@
   justify-content: center;
   animation: myAnim 2s ease 0s 10000 normal forwards;
 }
-.section-one .main-button:hover {
-  background-color: #2196F3;
+.filters .filters__button:hover {
+  background-color: #3791db;
   color: white;
   box-shadow: 0px 2px 5px #989898;
   cursor: pointer;
@@ -169,12 +169,12 @@
     transform: scale(1);
   }
 }
-.section-two {
+.portfolio {
   padding-left: 5px;
   align-items: center;
   padding: 50px 0;
 }
-.section-two .container {
+.portfolio .portfolio__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -183,80 +183,80 @@
   padding-bottom: 90px;
   margin: 0 auto;
 }
-.section-two .container .section-two-content {
+.portfolio .portfolio__container .portfolio__item {
   align-items: flex-start;
   justify-content: space-between;
   flex-basis: calc((100% - 60px) / 3);
   width: 31%;
-  border: 1px solid #EEEEEE;
+  border: 2px solid rgb(244, 244, 244);
   box-sizing: border-box;
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-two .container .section-two-content:hover {
+.portfolio .portfolio__container .portfolio__item:hover {
   box-shadow: 0px 5px 10px #989898;
 }
-.section-two .container .section-two-content:hover .overlay, .section-two .container .section-two-content:focus .overlay {
+.portfolio .portfolio__container .portfolio__item:hover .portfolio__overlay, .portfolio .portfolio__container .portfolio__item:focus .portfolio__overlay {
   bottom: 0;
   cursor: pointer;
 }
-.section-two .container .section-two-content .card {
+.portfolio .portfolio__container .portfolio__item .portfolio__card {
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-.section-two .container .section-two-content .card:hover .card-img {
+.portfolio .portfolio__container .portfolio__item .portfolio__card:hover .card-img {
   transform: scale(1.2);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-two .container .section-two-content .card:hover .card-img .main-img {
+.portfolio .portfolio__container .portfolio__item .portfolio__card:hover .card-img .main-img {
   width: 100%;
 }
-.section-two .container .section-two-content .card:hover .card-img .card img {
+.portfolio .portfolio__container .portfolio__item .portfolio__card:hover .card-img .portfolio__image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section-two .container .section-two-content .overlay {
+.portfolio .portfolio__container .portfolio__item .portfolio__overlay {
   width: 309px;
   height: 235px;
   position: absolute;
   bottom: -103%;
   left: 0;
   right: 0;
-  background-color: rgba(25, 152, 255, 0.8392156863);
+  background-color: #3791db;
   color: white;
   text-align: center;
   padding: 30px;
   transition: bottom 0.5s;
   cursor: pointer;
 }
-.section-two-content:hover .section-two .container .section-two-content .overlay, .section-two-content:focus .section-two .container .section-two-content .overlay {
+.portfolio__item:hover .portfolio .portfolio__container .portfolio__item .portfolio__overlay, .portfolio__item:focus .portfolio .portfolio__container .portfolio__item .portfolio__overlay {
   bottom: 0;
   cursor: pointer;
 }
-.section-two .container .section-two-content .overlay .poster {
+.portfolio .portfolio__container .portfolio__item .portfolio__overlay .portfolio__description {
   text-align: left;
-  font-family: "Roboto" sans-serif;
-  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: white;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   margin-top: 29px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
-.section-two .container .section-two-content .main-h7 {
+.portfolio .portfolio__container .portfolio__item .portfolio__title {
   display: flex;
   padding-bottom: 4px;
   padding-top: 20px;
   font-weight: 700;
   font-size: 18px;
   margin-left: 25px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
-.section-two .container .section-two-content .main-p {
-  font-family: "Roboto";
+.portfolio .portfolio__container .portfolio__item .portfolio__type {
+  font-family: "Roboto", sans-serif;
   padding-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
@@ -266,24 +266,24 @@
 }
 
 .footer {
-  color: #fff;
-  background-color: rgb(38, 38, 38);
+  color: white;
+  background-color: black;
   padding: 94px 0;
   font-family: "Roboto", sans-serif;
 }
-.footer .section-three {
+.footer .footer__section {
   display: block;
 }
-.footer .section-three .container {
+.footer .footer__section .footer__container {
   display: flex;
   justify-content: center;
   padding: 0 15px;
   margin: 0 auto;
 }
-.footer .section-three .container .w {
+.footer .footer__section .footer__container .footer__content {
   display: flex;
 }
-.footer .section-three .container .w .footer-div {
+.footer .footer__section .footer__container .footer__content .footer__info {
   margin: 0;
   padding: 0;
   border: 0;
@@ -292,33 +292,30 @@
   vertical-align: baseline;
   justify-content: center;
 }
-.footer .section-three .container .w .footer-div .WEB {
+.footer .footer__section .footer__container .footer__content .footer__info .footer__logo {
   width: 145px;
 }
-.footer .section-three .container .w .footer-div .footer-p {
+.footer .footer__section .footer__container .footer__content .footer__info .footer__address, .footer .footer__section .footer__container .footer__content .footer__info .footer__email, .footer .footer__section .footer__container .footer__content .footer__info .footer__phone {
   color: white;
   padding-left: 15px;
   font-weight: 400;
   font-size: 14px;
   padding-bottom: 16px;
 }
-.footer .section-three .container .w .footer-div .nn {
-  color: #616161;
-}
-.footer .section-three .container .w .icon-div {
+.footer .footer__section .footer__container .footer__content .footer__social {
   margin-left: 105px;
   margin-top: 10px;
 }
-.footer .section-three .container .w .icon-div .foote-p {
-  color: #FFFFFF;
+.footer .footer__section .footer__container .footer__content .footer__social .footer__social-title {
+  color: white;
   margin-bottom: 30px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   display: flex;
 }
-.footer .section-three .container .w .icon-div .ico {
+.footer .footer__section .footer__container .footer__content .footer__social .footer__social-icon {
   font-size: 20px;
   color: rgb(175, 177, 184);
   margin-bottom: 44px;
@@ -327,52 +324,52 @@
   background-color: #454545;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .section-three .container .w .icon-div .ico:hover {
+.footer .footer__section .footer__container .footer__content .footer__social .footer__social-icon:hover {
   cursor: pointer;
   color: white;
-  background-color: #2196F3;
+  background-color: #3791db;
 }
-.footer .section-three .container .subscription-container {
+.footer .footer__section .footer__container .footer__subscription {
   text-align: center;
   margin-top: 10px;
 }
-.footer .section-three .container .subscription-container .subscription-form {
+.footer .footer__section .footer__container .footer__subscription .footer__form {
   margin-left: 93px;
 }
-.footer .section-three .container .subscription-container .subscription-form label {
+.footer .footer__section .footer__container .footer__subscription .footer__form label {
   font-size: 14px;
 }
-.footer .section-three .container .subscription-container .subscription-form .f00te-p {
-  font-family: "Roboto";
+.footer .footer__section .footer__container .footer__subscription .footer__form .footer__label {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   color: white;
   display: flex;
 }
-.footer .section-three .container .subscription-container .subscription-form .input-group {
+.footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .section-three .container .subscription-container .subscription-form .input-group .rg {
+.footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group .footer__input {
   padding-left: 28px;
-  background-color: rgb(38, 38, 38);
+  background-color: black;
   border: solid #616161 3px;
   border-radius: 5px 5px 5px 5px;
   font-size: 16px;
   width: 308px;
   height: 46px;
-  color: #FFFFFF;
+  color: white;
 }
-.footer .section-three .container .subscription-container .subscription-form .input-group .rg:focus {
+.footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group .footer__input:focus {
   outline: none;
 }
-.footer .section-three .container .subscription-container .subscription-form .input-group .rr {
+.footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group .footer__button {
   border: none;
   border-radius: 5px 5px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #3791db;
+  color: white;
   font-size: 16px;
   cursor: pointer;
   display: flex;
@@ -384,11 +381,11 @@
   padding-bottom: 15px;
   padding-right: 48px;
   padding-left: 48px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #3791db;
+  color: white;
   border: none;
   animation: myAnim 2s ease 0s 10000 normal forwards;
 }
-.footer .section-three .container .subscription-container .subscription-form .input-group .y {
+.footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group .footer__button-icon {
   padding-left: 8px;
 }/*# sourceMappingURL=portfolio.css.map */

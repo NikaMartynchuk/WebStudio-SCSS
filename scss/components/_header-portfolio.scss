@@ -1,5 +1,5 @@
 .header {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-face;
     display: flex;
     justify-content: center;
 
@@ -24,7 +24,7 @@
                 height: 16px;
                 left: 548px;
                 top: 32px;
-                font-family: 'Roboto';
+                font-family: $font-face;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;

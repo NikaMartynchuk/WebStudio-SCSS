@@ -1,5 +1,5 @@
 .footer {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-face;
     background-color: $footer-color;
     padding: 94px 0;
 
@@ -35,7 +35,7 @@
             margin-top: 10px;
 
             .footer__social-title {
-                font-family: 'Roboto', sans-serif;
+                font-family: $font-face;
                 color: $root-color-two;
                 margin-bottom: 30px;
             }

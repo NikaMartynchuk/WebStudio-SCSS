@@ -2,22 +2,21 @@
     color: $root-color-two;
     background-color: $root-color;
     padding: 94px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-face;
 
-    .section-three {
+    .footer__section {
         display: block;
 
-        .container {
+        .footer__container {
             display: flex;
             justify-content: center;
             padding: 0 15px;
             margin: 0 auto;
 
-
-            .w {
+            .footer__content {
                 display: flex;
 
-                .footer-div {
+                .footer__info {
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -26,11 +25,11 @@
                     vertical-align: baseline;
                     justify-content: center;
 
-                    .WEB {
+                    .footer__logo {
                         width: 145px;
                     }
 
-                    .footer-p {
+                    .footer__address, .footer__email, .footer__phone {
                         color: $root-color-two;
                         padding-left: 15px;
                         font-weight: 400;
@@ -38,27 +37,23 @@
                         padding-bottom: 16px;
                     }
 
-                    .nn {
-                        color: $text-color;
-                    }
-
                 }
 
-                .icon-div {
+                .footer__social {
                     margin-left: 105px;
                     margin-top: 10px;
 
-                    .foote-p {
+                    .footer__social-title {
                         color: $root-color-two;
                         margin-bottom: 30px;
-                        font-family: 'Roboto';
+                        font-family: $font-face;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
                         display: flex;
                     }
 
-                    .ico {
+                    .footer__social-icon {
                         font-size: 20px;
                         color: $shadow-color;
                         margin-bottom: 44px;
@@ -77,19 +72,19 @@
 
             }
 
-            .subscription-container {
+            .footer__subscription {
                 text-align: center;
                 margin-top: 10px;
 
-                .subscription-form {
+                .footer__form {
                     margin-left: 93px;
 
                     & label {
                         font-size: 14px;
                     }
 
-                    .f00te-p {
-                        font-family: 'Roboto';
+                    .footer__label {
+                        font-family: $font-face;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
@@ -97,12 +92,12 @@
                         display: flex;
                     }
 
-                    .input-group {
+                    .footer__input-group {
                         display: flex;
                         justify-content: center;
                         align-items: center;
 
-                        .rg {
+                        .footer__input {
                             padding-left: 28px;
                             background-color: $root-color;
                             border: solid #616161 3px;
@@ -117,7 +112,7 @@
                             }
                         }
 
-                        .rr {
+                        .footer__button {
                             border: none;
                             border-radius: 5px 5px;
                             background-color: $accent-color;
@@ -139,7 +134,7 @@
                             animation: myAnim 2s ease 0s 10000 normal forwards;
                         }
 
-                        .y {
+                        .footer__button-icon {
                             padding-left: 8px;
                         }
                     }

@@ -49,7 +49,7 @@
     }
 
     .features__title {
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-face;
         font-size: 14px;
         line-height: 438.64%;;
         font-weight: 700;
@@ -58,7 +58,7 @@
 
       .features__description {
         line-height: 170%;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-face;
         padding-bottom: 30.46px;
         font-size: 16px;
         font-weight: 400;

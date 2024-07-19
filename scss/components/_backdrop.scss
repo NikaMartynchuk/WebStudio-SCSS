@@ -16,7 +16,7 @@
     padding: 50px;
 
     .intro__title {
-      font-family: 'Roboto', sans-serif;
+      font-family: $font-face;
       line-height: 60%;
       animation: anim 2s ease 0s 1 normal forwards;
       font-size: 44px;
@@ -54,7 +54,7 @@
 
     .modal__title {
       margin-top: 40px;
-      font-family: 'Roboto';
+      font-family: $font-face;
       font-style: normal;
       font-size: 20px;
       font-weight: 600;
@@ -63,7 +63,7 @@
 
     .modal__label--checkbox{
         background-image: url(svg/icomoon/demo-files/);
-        font-family: 'Roboto';
+        font-family: $font-face;
         font-style: normal;
         font-weight: 400;
         color: $text-color;
@@ -76,7 +76,7 @@
 
     .modal__label {
       background-image: url(svg/icomoon/demo-files/);
-      font-family: 'Roboto';
+      font-family: $font-face;
       font-style: normal;
       font-weight: 400;
       color: $text-color;
@@ -164,7 +164,7 @@
       justify-content: center;
       display: flex;
       align-items: center;
-      font-family: 'Roboto';
+      font-family: $font-face;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
