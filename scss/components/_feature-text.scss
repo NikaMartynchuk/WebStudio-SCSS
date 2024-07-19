@@ -1,8 +1,8 @@
-.section-three {
+.services {
     padding-top: 94px;
     padding-bottom: 94px;
 
-    .main-h2 {
+    .services__title {
         font-family: 'Roboto', sans-serif;
         font-size: 44px;
         font-weight: 900;
@@ -12,21 +12,21 @@
         animation: anim 2s ease 0s 1 normal forwards;
     }
 
-        .container {
+        .services__container {
             width: 1270px;
             padding: 0 15px;
             margin: 0 auto;
 
-        .section-three-wrap {
+        .services__list {
             display: flex;
             justify-content: space-between;
       }
     }
 
-      .back-text {
+      .services__text {
         margin: 0 auto;
         position: absolute;
-        top: 1492px;
+        top: 1468px;
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -42,10 +42,10 @@
         background-color:  $underlayer-color-two;
       }
 
-      .bac-text {
+      .services__text1 {
         margin: 0 auto;
         position: absolute;
-        top: 1492px;
+        top: 1468px;
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;

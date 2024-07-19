@@ -1,4 +1,4 @@
-.client {
+.clients__title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -8,13 +8,13 @@
     margin-top: 94px;
   }
 
-  .svg-icons {
+  .clients__logos {
     margin: 0 auto;
     width: 1270px;
     display: flex;
     justify-content: space-between;
 
-    .sm {
+    .clients__logo {
         border: solid $shadow-color 3px;
         color: $clients-color;
         margin-top: 78px;

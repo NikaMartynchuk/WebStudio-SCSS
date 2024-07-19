@@ -3,44 +3,44 @@
     background-color: $footer-color;
     padding: 94px 0;
 
-    .fo-div {
+    .footer__content {
         width: 1270px;
         padding: 0 15px;
         margin: 0 auto;
         display: flex;
 
-        .footer-div {
+        .footer__info {
             width: 470px;
 
-            .WEB {
+            .footer__logo {
                 width: 145px;
             }
 
-            .footer-p {
+            .footer__address {
                 color: $root-color-two;
                 margin-top: 2px;
                 margin-left: 16px;
             }
 
 
-            .footer-text {
+            .footer__contact {
                 color: $text-color;
                 margin: 16px;
             }
         }
 
-        .icon-div {
+        .footer__social {
             width: 400px;
             margin-left: 105px;
             margin-top: 10px;
 
-            .foote-p {
+            .footer__social-title {
                 font-family: 'Roboto', sans-serif;
                 color: $root-color-two;
                 margin-bottom: 30px;
             }
 
-            .ico {
+            .footer__icon {
                 font-size: 20px;
                 color: $shadow-color;
                 margin-bottom: 44px;
@@ -61,10 +61,10 @@
         }
 
 
-        .subscription-container {
+        .footer__subscription {
             text-align: center;
 
-            .subscription-form {
+            .footer__form {
                 margin-left: 93px;
                 margin-top: 10px;
 
@@ -73,13 +73,13 @@
                     font-size: 14px;
                 }
 
-                .f00te-p {
+                .footer__label {
                     color: $root-color-two;
                     display: flex;
                     font-size: 14px;
                 }
 
-                .input-group {
+                .footer__input-group {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -122,13 +122,13 @@
                         border: none;
                         animation: myAnim 2s ease 0s 10000 normal forwards;
 
-                        .input-group input:focus,
+                        .footer__input-group input:focus,
                         &:focus {
                             outline: none;
                         }
 
 
-                        .y {
+                        .footer__submit-icon {
                             margin-left: 10px;
                         }
                     }

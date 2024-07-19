@@ -55,74 +55,79 @@
         <article class="intro__article">
           <h1 class="intro__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button class="intro__button" type="button" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" class="modal__close" data-modal-close>&times;</button>
+              <h1 class="modal__title">Залиште свої дані, ми вам передзвонимо</h1>
+      
+              <form class="modal__form">
+                <a class="modal__label">Ім'я</a>
+                  <div class="modal__div">
+                    <label>
+                      <span class="icon-person-black-18dp-1 rrt"></span>
+                      <input class="modal__input" type="text" name="name" minlength="3" required
+                        pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+                    </label>
+                  </div>
+      
+                  <a class="modal__label">Телефон </a>
+                      <div class="modal__div">
+                        <label>
+                    <span class="icon-Vector-1 rtt"></span>
+                    <input class="modal__input" type="tel" name="phone" required min="10" max="20">
+                  </label>
+                      </div>
+      
+                  <a class="modal__label">Пошта </a>
+                  <div class="modal__div">
+                    <label>
+                    <span class="icon-Vector-2 rt"></span>
+                    <input class="modal__input" type="email" name="email">
+                  </label>
+      
+                  <a class="modal__label">Коментар</a>
+                  <label>
+                    <textarea  type="email" class="modal__textarea" name="comment" placeholder="Введіть текст"></textarea>
+                  </label>
+      
+                  <label class="modal__label--checkbox">
+                    <input class="modal__checkbox" id="agreement" type="checkbox" name="agreement">
+                    Погоджуюся з розсилкою та приймаю <a href="#" class="modal__link">Умови договору</a>
+                  </label>
+      
+                  <button class="modal__submit" type="submit">Відправити</button>
+              </form>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
     <!-- Modal -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__close" data-modal-close>&times;</button>
-        <h1 class="modal__title">Залиште свої дані, ми вам передзвонимо</h1>
-
-        <form class="modal__form">
-          <a class="modal__label">Ім'я</a>
-            <div class="modal__div">
-              <label>
-                <span class="icon-person-black-18dp-1 rrt"></span>
-                <input class="modal__input" type="text" name="name" minlength="3" required
-                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
-              </label>
-            </div>
-
-            <a class="modal__label">Телефон </a>
-                <div class="modal__div">
-                  <label>
-              <span class="icon-Vector-1 rtt"></span>
-              <input class="modal__input" type="tel" name="phone" required min="10" max="20">
-            </label>
-                </div>
-
-            <a class="modal__label">Пошта </a>
-            <div class="modal__div">
-              <label>
-              <span class="icon-Vector-2 rt"></span>
-              <input class="modal__input" type="email" name="email">
-            </label>
-
-            <a class="modal__label">Коментар</a>
-            <label>
-              <textarea  type="email" class="modal__textarea" name="comment" placeholder="Введіть текст"></textarea>
-            </label>
-
-            <label class="modal__label modal__label--checkbox">
-              <input class="modal__checkbox" id="agreement" type="checkbox" name="agreement">
-              Погоджуюся з розсилкою та приймаю <a href="#" class="modal__link">Умови договору</a>
-            </label>
-
-            <button class="modal__submit" type="submit">Відправити</button>
-        </form>
-      </div>
-    </div>
+   
 
     <!---section 2-->
     <section class="features">
       <div class="features__container">
         <div class="features__item" id="one">
+          <img src="photos/group1.jpg" id="one">
           <h5 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h5>
           <p class="features__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
           </p>
         </div>
-        <div class="features__item" id="two">
+        <div class="features__item">
+          <img src="photos/group2.jpg" id="one">
           <h5 class="features__title">ПУНКТУАЛЬНІСТЬ</h5>
           <p class="features__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
           </p>
         </div>
-        <div class="features__item" id="three">
+        <div class="features__item">
+          <img src="photos/group3.jpg" id="one">
           <h5 class="features__title">ПЛАНУВАННЯ</h5>
           <p class="features__description">Так само консультація з широким активом значною мірою зумовлює.</p>
         </div>
-        <div class="features__item" id="four">
+        <div class="features__item">
+          <img src="photos/group1.jpg" id="one">
           <h5 class="features__title">СУЧАСНI ТЕХНОЛОГІЇ</h5>
           <p class="features__description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.
           </p>
@@ -141,11 +146,11 @@
           </div>
           <div class="services__item">
             <img class="services__image" src="photos/box2.jpg" alt="Mobile Applications" height="293" width="370">
-            <p class="services__text">МОБІЛЬНІ ДОДАТКИ</p>
+            <p class="services__text1">МОБІЛЬНІ ДОДАТКИ</p>
           </div>
           <div class="services__item">
             <img class="services__image" src="photos/box3.jpg" alt="Design Solutions" height="293" width="370">
-            <p class="services__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+            <p class="services__text1">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
           </div>
         </div>
       </div>
@@ -161,10 +166,10 @@
             <h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__role">Product Designer</p>
             <div class="team__social">
-              <span class="team__icon team__icon--instagram"></span>
-              <span class="team__icon team__icon--twitter"></span>
-              <span class="team__icon team__icon--facebook"></span>
-              <span class="team__icon team__icon--linkedin"></span>
+              <span class="team__icon icon-instagram"></span>
+              <span class="team__icon icon-twitter"></span>
+              <span class="team__icon icon-facebook"></span>
+              <span class="team__icon icon-linkedin"></span>
             </div>
           </div>
           <div class="team__member">
@@ -172,10 +177,10 @@
             <h3 class="team__name">Ольга Рєпіна</h3>
             <p class="team__role">Frontend Developer</p>
             <div class="team__social">
-              <span class="team__icon team__icon--instagram"></span>
-              <span class="team__icon team__icon--twitter"></span>
-              <span class="team__icon team__icon--facebook"></span>
-              <span class="team__icon team__icon--linkedin"></span>
+              <span class="team__icon icon-instagram"></span>
+              <span class="team__icon icon-twitter"></span>
+              <span class="team__icon icon-facebook"></span>
+              <span class="team__icon icon-linkedin"></span>
             </div>
           </div>
           <div class="team__member">
@@ -183,23 +188,21 @@
             <h3 class="team__name">Микола Тарасов</h3>
             <p class="team__role">Marketing</p>
             <div class="team__social">
-              <span class="team__icon team__icon--instagram"></span>
-              <span class="team__icon team__icon--twitter"></span>
-              <span class="team__icon team__icon--facebook"></span>
-              <span class="team__icon team__icon--linkedin"></span>
+              <span class="team__icon icon-instagram"></span>
+              <span class="team__icon icon-twitter"></span>
+              <span class="team__icon icon-facebook"></span>
+              <span class="team__icon icon-linkedin"></span>
             </div>
           </div>
           <div class="team__member">
             <img class="team__image" src="photos/img3.jpg" alt="Михайло Єрмакова" height="260" width="270">
             <h3 class="team__name">Михайло Єрмакова</h3>
             <p class="team__role">UI Designer</p>
-            <div class="team__social
-  
-  ">
-              <span class="team__icon team__icon--instagram"></span>
-              <span class="team__icon team__icon--twitter"></span>
-              <span class="team__icon team__icon--facebook"></span>
-              <span class="team__icon team__icon--linkedin"></span>
+            <div class="team__social">
+              <span class="team__icon icon-instagram"></span>
+              <span class="team__icon icon-twitter"></span>
+              <span class="team__icon icon-facebook"></span>
+              <span class="team__icon icon-linkedin"></span>
             </div>
           </div>
         </div>
@@ -210,12 +213,12 @@
       <div class="clients__container">
         <p class="clients__title">Постійні клієнти</p>
         <div class="clients__logos">
-          <span class="clients__logo clients__logo--union"></span>
-          <span class="clients__logo clients__logo--group-four"></span>
-          <span class="clients__logo clients__logo--group-five"></span>
-          <span class="clients__logo clients__logo--group-one"></span>
-          <span class="clients__logo clients__logo--group-two"></span>
-          <span class="clients__logo clients__logo--group-three"></span>
+          <span class="clients__logo icon-union"></span>
+          <span class="clients__logo icon-groupfour"></span>
+          <span class="clients__logo icon-groupfive"></span>
+          <span class="clients__logo icon-groupone"></span>
+          <span class="clients__logo icon-grouptwo"></span>
+          <span class="clients__logo icon-groupthree"></span>
         </div>
       </div>
     </section>
@@ -233,10 +236,10 @@
           </div>
           <div class="footer__social">
             <p class="footer__social-title">Приєднуйтесь</p>
-            <span class="footer__icon footer__icon--instagram"></span>
-            <span class="footer__icon footer__icon--twitter"></span>
-            <span class="footer__icon footer__icon--facebook"></span>
-            <span class="footer__icon footer__icon--linkedin"></span>
+            <span class="footer__icon icon-instagram"></span>
+            <span class="footer__icon icon-twitter"></span>
+            <span class="footer__icon icon-facebook"></span>
+            <span class="footer__icon icon-linkedin"></span>
           </div>
           <div class="footer__subscription">
             <form class="footer__form">

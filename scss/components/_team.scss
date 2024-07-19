@@ -1,17 +1,17 @@
-.section-four {
-    background-color: $root-color-two;
+.team {
+    background-color: $back-color;
     padding: 161px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
-    .container {
+    .team__container {
         width: 1270px;
         padding: 0 15px;
         margin: 0 auto;
 
-        .mainn-h1 {
+        .team__title {
             font-family: 'Roboto', sans-serif;
             font-size: 44px;
             font-weight: 900;
@@ -20,18 +20,18 @@
             margin-bottom: 50px;
           }
 
-          .section-four-wrap {
+          .team__list {
             justify-content: space-between;
             display: flex;
             flex-wrap: wrap;
 
-            .section-four-item {
+            .team__member {
                 background-color: $root-color-two;
                 text-align: center;
                 box-shadow: 0px 1px 5px $root-color-two;
                 
 
-                .main-h3 {
+                .team__name {
                     font-family: 'Roboto', sans-serif;
                     padding-bottom: 10.15px;
                     font-size: 16px;
@@ -39,7 +39,7 @@
                     margin-top: 30px;
                   }
 
-                  .main-p {
+                  .team__role {
                     font-family: 'Roboto', sans-serif;
                     padding-bottom: 30.46px;
                     font-size: 16px;
@@ -49,11 +49,11 @@
                   }
 
 
-                  .section-four-link-list {
+                  .team__social {
                     display: flex;
                     justify-content: space-evenly;
 
-                    .icon {
+                    .team__icon {
                         font-size: 20px;
                         color: $shadow-color;
                         margin-bottom: 44px;
@@ -74,7 +74,7 @@
                   }
               }
 
-              .section-four-link-list {
+              .team__social {
                 display: flex;
                 justify-content: space-evenly;
               }

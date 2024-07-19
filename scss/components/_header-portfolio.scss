@@ -3,24 +3,24 @@
     display: flex;
     justify-content: center;
 
-    .header-a1 {
+    .header__logo {
         display: flex;
         align-items: center;
         margin-right: 40px;
         margin-left: 20px;
     }
 
-    .section {
+    .header__section {
         list-style: none;
         display: flex;
 
-        .header-navigation {
+        .header__navigation {
             list-style: none;
             display: flex;
             justify-content: space-between;
             padding: 24px 0;
 
-            .header-a {
+            .header__link {
                 height: 16px;
                 left: 548px;
                 top: 32px;
@@ -46,7 +46,7 @@
                 }
             }
 
-            .n {
+            .header__link--active {
                 animation: anim 2s ease 0s 1 normal forwards;
 
                 &:hover:after {
@@ -72,16 +72,16 @@
                 background-color: $accent-color;
             }
 
-            .o {
+            .header__link-text {
                 color: $accent-color;
                 animation: anim 2s ease 0s 1 normal forwards;
             }
 
-            .navigation-right {
+            .header__navigation-right {
                 display: flex;
                 margin-right: 40px;
 
-                .ic {
+                .header__contact {
                     display: flex;
                     align-items: center;
                     animation: anim 2s ease 0s 1 normal forwards;
@@ -111,12 +111,12 @@
                         margin-left: 65px;
                       }
 
-                    .smm {
+                    .header__icon {
                         padding-right: 10px;
                         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                     }
 
-                    .header-tel {
+                    .header__email {
                         color: $root-color;
                         font-size: 14px;
                         text-decoration: none;
@@ -130,7 +130,7 @@
                         }
                       }
 
-                      .header-tel1 {
+                      .header__phone {
                         align-items: center;
                         color: $root-color;
                         font-size: 14px;

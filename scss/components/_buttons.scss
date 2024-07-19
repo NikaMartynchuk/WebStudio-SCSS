@@ -1,18 +1,18 @@
-.section-one {
+.filters {
     justify-content: center;
 
-    .container1 {
+    .filters__container {
         padding-top: 44px;
         width: 1170px;
         margin: 0 auto;
 
-        .container-button {
+        .filters__button-group {
             justify-content: center;
             display: flex;
           }
       }
       
-      .main-button {
+      .filters__button {
         font-family: 'Roboto';
         font-size: 16px;
         font-weight: 700;
