@@ -1,13 +1,15 @@
 .footer {
-    font-family: $font-face;
+    @include text($color: black);
     background-color: $footer-color;
     padding: 94px 0;
+    @extend %flex;
+
 
     .footer__content {
         width: 1270px;
         padding: 0 15px;
-        margin: 0 auto;
-        display: flex;
+        @extend %flex;
+
 
         .footer__info {
             width: 470px;
@@ -17,14 +19,14 @@
             }
 
             .footer__address {
-                color: $root-color-two;
+                @include text($color: rgb(255, 255, 255));
                 margin-top: 2px;
                 margin-left: 16px;
             }
 
 
             .footer__contact {
-                color: $text-color;
+                @include text($color: #757575);
                 margin: 16px;
             }
         }
@@ -62,7 +64,7 @@
 
 
         .footer__subscription {
-            text-align: center;
+            @extend %flex;
 
             .footer__form {
                 margin-left: 93px;
@@ -74,15 +76,14 @@
                 }
 
                 .footer__label {
-                    color: $root-color-two;
+                    @include text($color: rgb(255, 255, 255));
                     display: flex;
                     font-size: 14px;
                 }
 
                 .footer__input-group {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @extend %flex;
+
 
                     & input {
                         background-color: $footer-color;
@@ -102,35 +103,17 @@
                     }
 
                     & button {
-                        border: none;
-                        border-radius: 5px 5px;
-                        background-color: $accent-color;
-                        color: $root-color-two;
-                        font-size: 16px;
-                        cursor: pointer;
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 19px;
-                        margin-top: 19px;
-                        margin-left: 18px;
-                        padding-top: 15px;
-                        padding-bottom: 15px;
-                        padding-right: 48px;
-                        padding-left: 48px;
-                        background-color: $accent-color;
-                        color: $root-color-two;
-                        border: none;
-                        animation: myAnim 2s ease 0s 10000 normal forwards;
+                        @include buttons($padding: 14px 24px, $margin: 20px);
+                    }
 
-                        .footer__input-group input:focus,
-                        &:focus {
-                            outline: none;
-                        }
+                    .footer__input-group input:focus,
+                    &:focus {
+                        outline: none;
+                    }
 
 
-                        .footer__submit-icon {
-                            margin-left: 10px;
-                        }
+                    .footer__submit-icon {
+                        margin-left: 10px;
                     }
                 }
             }

@@ -2,6 +2,7 @@
     color: $root-color-two;
     background-color: $root-color;
     padding: 94px 0;
+    @extend %flex;
     font-family: $font-face;
 
     .footer__section {
@@ -29,12 +30,17 @@
                         width: 145px;
                     }
 
-                    .footer__address, .footer__email, .footer__phone {
-                        color: $root-color-two;
-                        padding-left: 15px;
-                        font-weight: 400;
-                        font-size: 14px;
-                        padding-bottom: 16px;
+                    .footer__address {
+                        margin: 10px 20px;
+
+                        @include text($color: rgb(255, 255, 255));
+                    }
+
+                    .footer__email,
+                    .footer__phone {
+                        margin: 10px 20px;
+                        @include text($color: rgb(151, 151, 151));
+
                     }
 
                 }
@@ -113,25 +119,7 @@
                         }
 
                         .footer__button {
-                            border: none;
-                            border-radius: 5px 5px;
-                            background-color: $accent-color;
-                            color: $root-color-two;
-                            font-size: 16px;
-                            cursor: pointer;
-                            display: flex;
-                            align-items: center;
-                            margin-bottom: 19px;
-                            margin-top: 19px;
-                            margin-left: 18px;
-                            padding-top: 15px;
-                            padding-bottom: 15px;
-                            padding-right: 48px;
-                            padding-left: 48px;
-                            background-color: $accent-color;
-                            color: $root-color-two;
-                            border: none;
-                            animation: myAnim 2s ease 0s 10000 normal forwards;
+                            @include buttons($padding: 14px 24px, $margin: 20px);
                         }
 
                         .footer__button-icon {

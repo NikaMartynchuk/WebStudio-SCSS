@@ -1,8 +1,6 @@
 .header {
-    font-family: $font-face;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include text($color: black);
+    @extend %flex;
 
     .header__nav {
         list-style: none;

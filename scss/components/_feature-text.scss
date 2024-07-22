@@ -1,12 +1,13 @@
 .services {
     padding-top: 94px;
     padding-bottom: 94px;
+    @extend %flex;
+
 
     .services__title {
-        font-family: $font-face;
-        font-size: 44px;
-        font-weight: 900;
-        text-align: center;
+      @include title;
+
+        @extend %flex;
         line-height: 136%;
         margin-bottom: 50px;
         animation: anim 2s ease 0s 1 normal forwards;
@@ -23,44 +24,19 @@
       }
     }
 
-      .services__text {
-        margin: 0 auto;
-        position: absolute;
-        top: 1468px;
-        font-family: $font-face;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        width: 370px;
-        line-height: 16.41px;
-        text-align: center;
-        padding-top: 27px;
-        padding-bottom: 27px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $root-color-two;
-        background-color:  $underlayer-color-two;
-      }
-
-      .services__text1 {
-        margin: 0 auto;
-        position: absolute;
-        top: 1468px;
-        font-family: $font-face;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        width: 370px;
-        line-height: 16.41px;
-        text-align: center;
-        padding-top: 27px;
-        padding-bottom: 27px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $root-color-two;
-        background-color:  $underlayer-color-two;
-      }
-      
-  }
-
   
+      .services__text {
+        position: absolute;
+        top: 1438px;
+        @include text($color: #757575);
+        width: 370px;
+        line-height: 16.41px;
+        @extend %flex;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $root-color-two;
+        background-color:  $underlayer-color-two;
+      }
+      }

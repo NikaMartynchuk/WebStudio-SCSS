@@ -1,0 +1,35 @@
+@mixin buttons($padding, $margin){
+    animation: myAnim 2s ease 0s 1000 normal forwards;
+    background-color: $root-color-two;
+    border: 0;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05cm;
+    text-align: center;
+    background-color: $accent-color;
+    color: $root-color-two;
+    border: 0px;
+    @extend %flex;
+    border-radius: 10px 10px;
+    margin: $margin ;
+    padding: $padding;
+    cursor: pointer;
+}
+
+@mixin text($color){
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: $color;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+@mixin title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 44px;
+    font-weight: 900;
+}

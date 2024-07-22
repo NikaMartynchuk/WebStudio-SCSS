@@ -1,16 +1,13 @@
 .portfolio {
-    padding-left: 5px;
-    align-items: center;
-    padding: 50px 0;
+    @extend %flex;
+    padding-top: 50px;
 
     .portfolio__container {
-        display: flex;
-        justify-content: space-between;
+        @extend %flex;
         flex-wrap: wrap;
         gap: 30px;
         width: 1170px;
         padding-bottom: 90px;
-        margin: 0 auto;
 
         .portfolio__item {
             align-items: flex-start;

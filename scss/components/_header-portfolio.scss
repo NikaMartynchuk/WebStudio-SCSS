@@ -1,23 +1,20 @@
 .header {
-    font-family: $font-face;
-    display: flex;
-    justify-content: center;
+    @include text($color: black);
+    @extend %flex;
+
 
     .header__logo {
-        display: flex;
-        align-items: center;
-        margin-right: 40px;
-        margin-left: 20px;
+        @extend %flex;
     }
 
     .header__section {
+        margin-left: 40px;
         list-style: none;
-        display: flex;
+        @extend %flex;
 
         .header__navigation {
             list-style: none;
-            display: flex;
-            justify-content: space-between;
+            @extend %flex;
             padding: 24px 0;
 
             .header__link {

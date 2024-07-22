@@ -1,8 +1,22 @@
+.footer .footer__content .footer__subscription .footer__form .footer__input-group button, .footer .footer__content .footer__subscription .footer__form .footer__input-group, .footer .footer__content .footer__subscription, .footer .footer__content, .footer, .clients__logos .clients__logo, .clients__title, .services .services__text, .services .services__title, .services, .intro form button[type=submit], .intro .modal__label--checkbox, .intro .intro__article .intro__button, .intro .intro__article .intro__title, .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .features__container .features__item .four::before, .features .features__container .features__item .three::before, .features .features__container .features__item .two::before, .features .features__container .features__item .one::before {
+  content: "";
+  width: 100%;
+  height: 120px;
+  display: block;
+}
+
 .header {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+  font-weight: 900;
 }
 .header .header__nav {
   list-style: none;
@@ -153,12 +167,10 @@
   animation: anim 2s ease 0s 1 normal forwards;
   font-size: 44px;
   font-weight: 900;
-  text-align: center;
   line-height: 136%;
   width: 596px;
   margin: 0 auto;
   line-height: 136%;
-  display: flex;
 }
 .intro .intro__article .intro__button {
   animation: myAnim 2s ease 0s 1000 normal forwards;
@@ -175,9 +187,8 @@
   color: white;
   border: 0px;
   border-radius: 10px 10px;
-  display: block;
-  margin: 20px auto 20px;
-  padding: 10px 32px;
+  margin: 0 auto;
+  padding: 14px 24px;
   cursor: pointer;
 }
 .intro .modal__title {
@@ -195,7 +206,6 @@
   font-weight: 400;
   color: #757575;
   color: #454545;
-  display: flex;
   padding-top: 17px;
   padding-bottom: 1px;
 }
@@ -271,14 +281,12 @@
   width: 20px;
 }
 .intro .modal__label--checkbox {
-  justify-content: center;
-  display: flex;
-  align-items: center;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   color: #757575;
+  padding-bottom: 15px;
   padding-top: 10px;
 }
 .intro .modal__link {
@@ -286,17 +294,23 @@
   padding-left: 4px;
 }
 .intro form button[type=submit] {
-  margin-bottom: 40px;
-  margin-top: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 48px;
-  padding-left: 48px;
+  animation: myAnim 2s ease 0s 1000 normal forwards;
+  background-color: white;
+  border: 0;
+  font-size: 20px;
+  padding: 20px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05cm;
+  text-align: center;
   background-color: #3791db;
   color: white;
-  border: none;
+  border: 0px;
+  border-radius: 10px 10px;
+  margin: 0 auto;
+  padding: 14px 24px;
   cursor: pointer;
-  border-radius: 5px 5px;
 }
 .intro form button[type=submit]:hover {
   background-color: #3791db;
@@ -343,6 +357,7 @@
 }
 
 .modal {
+  height: 550px;
   width: 528px;
   position: fixed;
   top: 50%;
@@ -401,29 +416,6 @@
   justify-content: space-between;
   width: 24%;
 }
-.features .features__container .features__item .one::before {
-  width: 100%;
-  height: 120px;
-  display: block;
-}
-.features .features__container .features__item .two::before {
-  content: "";
-  width: 100%;
-  height: 120px;
-  display: block;
-}
-.features .features__container .features__item .three::before {
-  content: "";
-  width: 100%;
-  height: 120px;
-  display: block;
-}
-.features .features__container .features__item .four::before {
-  content: "";
-  width: 100%;
-  height: 120px;
-  display: block;
-}
 .features .features__title {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -447,9 +439,9 @@
 }
 .services .services__title {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-size: 44px;
   font-weight: 900;
-  text-align: center;
   line-height: 136%;
   margin-bottom: 50px;
   animation: anim 2s ease 0s 1 normal forwards;
@@ -464,34 +456,15 @@
   justify-content: space-between;
 }
 .services .services__text {
-  margin: 0 auto;
   position: absolute;
-  top: 1468px;
+  top: 1438px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  color: #757575;
   font-size: 14px;
+  font-weight: 900;
   width: 370px;
   line-height: 16.41px;
-  text-align: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.529);
-}
-.services .services__text1 {
-  margin: 0 auto;
-  position: absolute;
-  top: 1468px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  width: 370px;
-  line-height: 16.41px;
-  text-align: center;
   padding-top: 27px;
   padding-bottom: 27px;
   letter-spacing: 0.03em;
@@ -515,10 +488,10 @@
 }
 .team .team__container .team__title {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-size: 44px;
   font-weight: 900;
   text-align: center;
-  line-height: 136%;
   margin-bottom: 50px;
 }
 .team .team__container .team__list {
@@ -533,17 +506,20 @@
 }
 .team .team__container .team__list .team__member .team__name {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 900;
   padding-bottom: 10.15px;
-  font-size: 16px;
-  font-weight: 500;
   margin-top: 30px;
 }
 .team .team__container .team__list .team__member .team__role {
-  font-family: "Roboto", sans-serif;
   padding-bottom: 30.46px;
-  font-size: 16px;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   color: #757575;
+  font-size: 14px;
+  font-weight: 900;
   animation: anim 2s ease 0s 1 normal forwards;
 }
 .team .team__container .team__list .team__member .team__social {
@@ -575,8 +551,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  display: flex;
-  justify-content: center;
   margin-top: 94px;
 }
 
@@ -595,7 +569,6 @@
   border-radius: 4px;
   width: 170px;
   padding: 18px 10px;
-  text-align: center;
 }
 .clients__logos .clients__logo {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -614,14 +587,16 @@
 
 .footer {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+  font-weight: 900;
   background-color: rgb(38, 38, 38);
   padding: 94px 0;
 }
 .footer .footer__content {
   width: 1270px;
   padding: 0 15px;
-  margin: 0 auto;
-  display: flex;
 }
 .footer .footer__content .footer__info {
   width: 470px;
@@ -630,12 +605,20 @@
   width: 145px;
 }
 .footer .footer__content .footer__info .footer__address {
-  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 900;
   margin-top: 2px;
   margin-left: 16px;
 }
 .footer .footer__content .footer__info .footer__contact {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   color: #757575;
+  font-size: 14px;
+  font-weight: 900;
   margin: 16px;
 }
 .footer .footer__content .footer__social {
@@ -664,9 +647,6 @@
 .footer .footer__content .footer__social .footer__icon:hover {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .footer__content .footer__subscription {
-  text-align: center;
-}
 .footer .footer__content .footer__subscription .footer__form {
   margin-left: 93px;
   margin-top: 10px;
@@ -676,14 +656,13 @@
   font-size: 14px;
 }
 .footer .footer__content .footer__subscription .footer__form .footer__label {
-  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 900;
   display: flex;
   font-size: 14px;
-}
-.footer .footer__content .footer__subscription .footer__form .footer__input-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer .footer__content .footer__subscription .footer__form .footer__input-group input {
   background-color: rgb(38, 38, 38);
@@ -701,29 +680,27 @@
   padding-left: 22px;
 }
 .footer .footer__content .footer__subscription .footer__form .footer__input-group button {
-  border: none;
-  border-radius: 5px 5px;
-  background-color: #3791db;
-  color: white;
+  animation: myAnim 2s ease 0s 1000 normal forwards;
+  background-color: white;
+  border: 0;
+  font-size: 20px;
+  padding: 20px 30px;
   font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin-bottom: 19px;
-  margin-top: 19px;
-  margin-left: 18px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 48px;
-  padding-left: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05cm;
+  text-align: center;
   background-color: #3791db;
   color: white;
-  border: none;
-  animation: myAnim 2s ease 0s 10000 normal forwards;
+  border: 0px;
+  border-radius: 10px 10px;
+  margin: 20px;
+  padding: 14px 24px;
+  cursor: pointer;
 }
-.footer .footer__content .footer__subscription .footer__form .footer__input-group button .footer__input-group input:focus, .footer .footer__content .footer__subscription .footer__form .footer__input-group button:focus {
+.footer .footer__content .footer__subscription .footer__form .footer__input-group .footer__input-group input:focus, .footer .footer__content .footer__subscription .footer__form .footer__input-group:focus {
   outline: none;
 }
-.footer .footer__content .footer__subscription .footer__form .footer__input-group button .footer__submit-icon {
+.footer .footer__content .footer__subscription .footer__form .footer__input-group .footer__submit-icon {
   margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */

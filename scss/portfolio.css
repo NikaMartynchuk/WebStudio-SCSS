@@ -1,22 +1,22 @@
-.header {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-}
-.header .header__logo {
+.footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group .footer__button, .footer, .portfolio .portfolio__container, .portfolio, .filters .filters__container .filters__button-group, .header .header__section .header__navigation, .header .header__section, .header .header__logo, .header {
   display: flex;
   align-items: center;
-  margin-right: 40px;
-  margin-left: 20px;
+  justify-content: center;
+}
+
+.header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+  font-weight: 900;
 }
 .header .header__section {
+  margin-left: 40px;
   list-style: none;
-  display: flex;
 }
 .header .header__section .header__navigation {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
   padding: 24px 0;
 }
 .header .header__section .header__navigation .header__link {
@@ -131,10 +131,6 @@
   width: 1170px;
   margin: 0 auto;
 }
-.filters .filters__container .filters__button-group {
-  justify-content: center;
-  display: flex;
-}
 .filters .filters__button {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -170,18 +166,13 @@
   }
 }
 .portfolio {
-  padding-left: 5px;
-  align-items: center;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .portfolio .portfolio__container {
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
   width: 1170px;
   padding-bottom: 90px;
-  margin: 0 auto;
 }
 .portfolio .portfolio__container .portfolio__item {
   align-items: flex-start;
@@ -295,12 +286,22 @@
 .footer .footer__section .footer__container .footer__content .footer__info .footer__logo {
   width: 145px;
 }
-.footer .footer__section .footer__container .footer__content .footer__info .footer__address, .footer .footer__section .footer__container .footer__content .footer__info .footer__email, .footer .footer__section .footer__container .footer__content .footer__info .footer__phone {
-  color: white;
-  padding-left: 15px;
-  font-weight: 400;
+.footer .footer__section .footer__container .footer__content .footer__info .footer__address {
+  margin: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: rgb(255, 255, 255);
   font-size: 14px;
-  padding-bottom: 16px;
+  font-weight: 900;
+}
+.footer .footer__section .footer__container .footer__content .footer__info .footer__email,
+.footer .footer__section .footer__container .footer__content .footer__info .footer__phone {
+  margin: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: rgb(151, 151, 151);
+  font-size: 14px;
+  font-weight: 900;
 }
 .footer .footer__section .footer__container .footer__content .footer__social {
   margin-left: 105px;
@@ -366,25 +367,23 @@
   outline: none;
 }
 .footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group .footer__button {
-  border: none;
-  border-radius: 5px 5px;
-  background-color: #3791db;
-  color: white;
+  animation: myAnim 2s ease 0s 1000 normal forwards;
+  background-color: white;
+  border: 0;
+  font-size: 20px;
+  padding: 20px 30px;
   font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin-bottom: 19px;
-  margin-top: 19px;
-  margin-left: 18px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 48px;
-  padding-left: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05cm;
+  text-align: center;
   background-color: #3791db;
   color: white;
-  border: none;
-  animation: myAnim 2s ease 0s 10000 normal forwards;
+  border: 0px;
+  border-radius: 10px 10px;
+  margin: 20px;
+  padding: 14px 24px;
+  cursor: pointer;
 }
 .footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group .footer__button-icon {
   padding-left: 8px;

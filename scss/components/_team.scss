@@ -12,11 +12,8 @@
         margin: 0 auto;
 
         .team__title {
-            font-family: $font-face;
-            font-size: 44px;
-            font-weight: 900;
+          @include title;
             text-align: center;
-            line-height: 136%;
             margin-bottom: 50px;
           }
 
@@ -32,19 +29,14 @@
                 
 
                 .team__name {
-                    font-family: $font-face;
-                    padding-bottom: 10.15px;
-                    font-size: 16px;
-                    font-weight: 500;
+                  @include text($color: #000000);
+                  padding-bottom: 10.15px;
                     margin-top: 30px;
                   }
 
                   .team__role {
-                    font-family: $font-face;
                     padding-bottom: 30.46px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: $text-color;
+                    @include text($color: #757575);
                     animation: anim 2s ease 0s 1 normal forwards;
                   }
 
