@@ -11,10 +11,16 @@
   display: block;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  color: black;
+  color: #757575;
   font-size: 14px;
   font-weight: 900;
 }
@@ -703,4 +709,10 @@
 }
 .footer .footer__content .footer__subscription .footer__form .footer__input-group .footer__submit-icon {
   margin-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    max-width: 960px;
+  }
 }/*# sourceMappingURL=style.css.map */

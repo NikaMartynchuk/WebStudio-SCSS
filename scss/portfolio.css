@@ -387,4 +387,59 @@
 }
 .footer .footer__section .footer__container .footer__subscription .footer__form .footer__input-group .footer__button-icon {
   padding-left: 8px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio__container {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  max-width: 1170px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .portfolio__container {
+    flex-direction: column;
+  }
+  .filters__container {
+    width: 326px;
+  }
+}
+@media (max-width: 768px) {
+  .header, .portfolio, .footer {
+    max-width: 540px;
+  }
+  .portfolio__container {
+    max-width: 0 auto;
+    max-width: 540px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .portfolio-item {
+    flex-basis: calc((100% - 10px) / 2);
+    font-size: 32px;
+  }
+  .portfolio-card {
+    width: 366px;
+  }
+  .portfolio-title {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    gap: 15px;
+    margin: 0 auto;
+  }
+  .portfolio-item {
+    flex-basis: calc((100% - 30px) / 3);
+  }
 }/*# sourceMappingURL=portfolio.css.map */

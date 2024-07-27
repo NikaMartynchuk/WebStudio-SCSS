@@ -8,3 +8,9 @@
 @import 'components/team';
 @import 'components/clients';
 @import 'components/footer';
+
+@media (max-width: 1200px){
+    .header{
+        max-width: 960px;
+    }
+}
