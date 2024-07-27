@@ -29,7 +29,6 @@
                 letter-spacing: 0.02em;
                 text-decoration: none;
                 display: flex;
-                margin-right: 50px;
                 align-items: center;
                 color: $root-color;
 
@@ -43,8 +42,10 @@
                 }
             }
 
-            .header__link--active {
+            .link--active {
                 animation: anim 2s ease 0s 1 normal forwards;
+                margin-right: 50px;
+
 
                 &:hover:after {
                     content: "";
@@ -72,6 +73,7 @@
             .header__link-text {
                 color: $accent-color;
                 animation: anim 2s ease 0s 1 normal forwards;
+                padding-right: 50px;
             }
 
             .header__navigation-right {
