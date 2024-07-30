@@ -409,6 +409,9 @@ img {
   }
 }
 @media (max-width: 991px) {
+  .portfolio-card {
+    height: 10px;
+  }
   .header__navigation-right {
     flex-direction: column;
   }
@@ -427,6 +430,15 @@ img {
     justify-content: normal;
   }
   .portfolio .portfolio__container .portfolio__item {
+    flex-basis: calc((100% - 30px) / 2) !important;
+  }
+  .footer__container {
+    gap: 15px !important;
+    margin: 0 auto;
+    width: 720px !important;
+    justify-content: normal;
+  }
+  .footer__container .footer__content {
     flex-basis: calc((100% - 30px) / 2) !important;
   }
 }
