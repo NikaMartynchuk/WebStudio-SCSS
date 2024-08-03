@@ -46,7 +46,7 @@
                 }
 
                 .footer__social {
-                    margin-left: 105px;
+                    margin-left: 83px;
                     margin-top: 10px;
 
                     .footer__social-title {
@@ -61,7 +61,6 @@
 
                     .footer__social-icon {
                         font-size: 20px;
-                        color: $shadow-color;
                         margin-bottom: 44px;
                         padding: 10px;
                         border-radius: 50%;
@@ -79,23 +78,23 @@
             }
 
             .footer__subscription {
+                padding-left: 80px;
                 text-align: center;
                 margin-top: 10px;
 
                 .footer__form {
-                    margin-left: 93px;
 
                     & label {
                         font-size: 14px;
                     }
 
                     .footer__label {
+                        display: flex;
                         font-family: $font-face;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
                         color: $root-color-two;
-                        display: flex;
                     }
 
                     .footer__input-group {

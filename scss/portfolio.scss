@@ -5,6 +5,7 @@
 @import 'components/buttons';
 @import 'components/section-two';
 @import 'components/footer-portfolio';
+@import 'components/burger-menu';
 
 img{
     width: 100%;
@@ -24,12 +25,52 @@ img{
     .portfolio__container {
         max-width: 960px;
     }
+
+    .portfolio__image{
+      height: 250px;
+    }
+
+    .portfolio__overlay{
+      width: 240px;
+      height: 235px;
+    }
+
+    
 }
 
 @media (max-width: 991px) {
-
     .portfolio-card{
         height: 10px;
+    }
+
+    .footer__input{
+      margin: 10px 120px;
+    }
+
+    .footer__input-group{
+display: flex;
+flex-direction: column;
+    }
+
+    .footer__label{
+      display: unset !important;
+    }
+    .footer__social{
+      margin-left: 163px !important;
+    }
+    .footer__content{
+      flex-basis: calc((100% - 30px) / 2) !important;
+      flex-wrap: wrap;
+    }
+
+    .portfolio__overlay{
+      width: 285px;
+      height: 205px;
+    }
+
+    .footer__subscription{
+      padding-left: 0 !important;
+      margin-top: 40px !important;
     }
 
     .header__navigation-right{
@@ -74,15 +115,40 @@ img{
 
 @media (max-width: 767px) {
 
-    .header,
-    .portfolio,
-    .footer {
-        max-width: 540px;
-    }
+.portfolio__description{
+  width: 240px;
+}
+.portfolio__overlay{
+  height: 235px;
+}
+
+.footer__label{
+  display: block;
+  margin-top: 40px;
+}
+
+.footer__email{
+  display: ruby-text;
+}
+
+.footer__social-title{
+  justify-content: center;
+}
+
+.footer__address{
+  display: contents;
+}
+
+.footer__logo{
+  margin-left: 23px;
+}
+
+.footer__phone{
+margin: 10px 40px !important;}
+}
 
     .portfolio__container {
         max-width: 0 auto;
-        max-width: 540px;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
@@ -101,7 +167,6 @@ img{
     .portfolio-title {
         width: 100%;
     }
-}
 
 @media (max-width: 575px) {
     .portfolio__container {
@@ -109,134 +174,30 @@ img{
         padding: 0 15px;
     }
 
-    .filters__container {
-        width: 26px;
+    .footer{
+      padding: 45px 0 ;
+    }
+    .footer__social{
+      margin: 0 auto !important;
+      padding-top: 30px;
     }
 
+    .footer__info{
+      margin: 0 auto !important;
+    }
 
-  #menuToggle{
-    display: block;
-    position: relative;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  
-  #menuToggle a
-  {
-    text-decoration: none;
-    color: #232323;
-    
-    transition: color 0.3s ease;
-  }
-  
-  #menuToggle a:hover
-  {
-    color: rgb(71, 169, 255);
-  }
-  
-  
-  #menuToggle 
-  {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0; 
-    z-index: 2; 
-    
-    -webkit-touch-callout: none;
-  }
-  
-  /*
-   * Just a quick hamburger
-   */
-  #menuToggle span
-  {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #000000;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-  }
-  
-  #menuToggle span:first-child
-  {
-    transform-origin: 0% 0%;
-  }
-  
-  #menuToggle span:nth-last-child(2)
-  {
-    transform-origin: 0% 100%;
-  }
-  
-  /* 
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
-  #menuToggle:checked ~ span
-  {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-  }
-  
-  /*
-   * But let's hide the middle one.
-   */
-  #menuToggle:checked ~ span:nth-last-child(3)
-  {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
-  #menuToggle:checked ~ span:nth-last-child(2)
-  {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-  
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
-  #menu
-  {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    
-    background: #ededed;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-  
-  #menu a
-  {
-    padding: 10px 0;
-    font-size: 22px;
-  }
+    .footer__content{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .portfolio__overlay{
+      width: 260px;
+    }
+
+.portfolio-item{
+  flex-basis: calc((100% - 30px) / 1) !important;
+  width: 100%;
+}
 
 }

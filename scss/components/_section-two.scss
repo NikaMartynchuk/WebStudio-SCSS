@@ -1,6 +1,6 @@
 .portfolio {
     @extend %flex;
-    padding-top: 50px;
+    padding-top: 30px;
 
     .portfolio__container {
         @extend %flex;
@@ -13,7 +13,6 @@
             align-items: flex-start;
             justify-content: space-between;
             flex-basis: calc((100% - 60px) / 3);
-            width: 31%;
             border: 2px solid $back-color;
             box-sizing: border-box;
             cursor: pointer;
@@ -52,10 +51,8 @@
             }
 
             .portfolio__overlay {
-                width: 309px;
-                height: 235px;
                 position: absolute;
-                bottom: -103%;
+                bottom: -143%;
                 left: 0;
                 right: 0;
                 background-color: $accent-color;

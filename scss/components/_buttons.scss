@@ -6,11 +6,13 @@
     margin: 0 auto;
 
     .filters__button-group {
+      flex-wrap: wrap;
       @extend %flex;
     }
   }
 
   .filters__button {
+    margin-bottom: 20px;
     font-family: $font-face;
     font-size: 16px;
     font-weight: 700;

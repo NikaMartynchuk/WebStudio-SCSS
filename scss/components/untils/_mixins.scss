@@ -33,3 +33,15 @@
     font-size: 44px;
     font-weight: 900;
 }
+
+@mixin log-btn($border){
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: $border;
+    border-radius: 70px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
