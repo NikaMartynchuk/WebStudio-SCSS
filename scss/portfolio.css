@@ -669,6 +669,11 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 1500px) {
+  .portfolio__overlay {
+    height: 230px;
+  }
+}
 @media (max-width: 1199px) {
   .portfolio__container {
     max-width: 960px;
