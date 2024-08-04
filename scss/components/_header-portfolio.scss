@@ -1,6 +1,7 @@
 .header {
     @include text($color: black);
     @extend %flex;
+    padding: 30px;
 
 
     .header__logo {
