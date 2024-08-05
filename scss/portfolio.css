@@ -716,6 +716,9 @@ img {
   .portfolio-card {
     height: 10px;
   }
+  .header__logo {
+    margin-right: 136px;
+  }
   .footer__input {
     margin: 11px 120px;
   }
