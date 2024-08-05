@@ -25,6 +25,18 @@ img {
   .portfolio__overlay {
     height: 230px;
   }
+
+  .header__section{
+    width: 643px;
+  }
+
+  .navigation__wrap{
+    width: 691px;
+  }
+
+  .navigation__menu{
+    width: 710px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -95,6 +107,10 @@ img {
     padding-top: 5px;
   }
 
+  .navigation__menu{
+    box-shadow: 0 12px 8px #adadad !important;
+  }
+
   .portfolio {
 
     .portfolio__container {
@@ -119,7 +135,9 @@ img {
       flex-basis: calc((100% - 30px) / 2) !important;
     }
   }
-
+.header__section{
+  width: 361px;
+}
 }
 
 @media (max-width: 767px) {
@@ -157,6 +175,7 @@ img {
     margin: 10px 40px !important;
   }
 }
+
 
 .portfolio__container {
   max-width: 0 auto;

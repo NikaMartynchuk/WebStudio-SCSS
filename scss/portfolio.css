@@ -431,6 +431,7 @@
 }
 
 .navigation__menu {
+  margin-top: 8px !important;
   list-style: none;
   display: flex;
   align-items: center;
@@ -438,7 +439,7 @@
 }
 
 input[type=checkbox],
-label {
+.labe {
   display: none;
 }
 
@@ -527,7 +528,7 @@ label {
 }
 /* mobile menu */
 @media (max-width: 868px) {
-  label {
+  .labe {
     display: block;
     height: 30px;
     width: 30px;
@@ -535,22 +536,25 @@ label {
     position: relative;
     z-index: 10;
   }
+  .header__logo {
+    margin-left: 50px;
+  }
   .header {
     justify-content: space-between;
   }
   .icon-Vector {
     padding-left: 0 !important;
   }
-  label:hover {
+  .labe:hover {
     cursor: pointer;
     z-index: 101;
   }
-  label span {
+  .labe span {
     top: 15px;
   }
-  label span,
-  label span::before,
-  label span::after {
+  .labe span,
+  .labe span::before,
+  .labe span::after {
     content: "";
     display: block;
     width: 25px;
@@ -560,10 +564,10 @@ label {
     right: 0;
     transition: 0.3s;
   }
-  label span::before {
+  .labe span::before {
     top: -8px;
   }
-  label span::after {
+  .labe span::after {
     top: 8px;
   }
   .navigation__menu {
@@ -577,15 +581,15 @@ label {
     flex-direction: column;
     z-index: 100;
   }
-  input[type=checkbox]:checked ~ label span {
+  input[type=checkbox]:checked ~ .labe span {
     transform: rotate(-45deg);
     z-index: 101;
   }
-  input[type=checkbox]:checked ~ label span::before {
+  input[type=checkbox]:checked ~ .labe span::before {
     top: 0;
     transform: rotate(0);
   }
-  input[type=checkbox]:checked ~ label span::after {
+  input[type=checkbox]:checked ~ .labe span::after {
     top: 0;
     transform: rotate(90deg);
   }
@@ -593,12 +597,12 @@ label {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100% !important;
     padding: 20px;
     background: #fff;
     margin: 0;
     padding: 0;
-    box-shadow: 0 12px 8px #a9a9a9;
+    box-shadow: 0 12px 8px #2f2f2f;
   }
   .navigation__menu li {
     margin: 15px 0;
@@ -686,6 +690,15 @@ img {
   .portfolio__overlay {
     height: 230px;
   }
+  .header__section {
+    width: 643px;
+  }
+  .navigation__wrap {
+    width: 691px;
+  }
+  .navigation__menu {
+    width: 710px;
+  }
 }
 @media (max-width: 1199px) {
   .portfolio__container {
@@ -739,6 +752,9 @@ img {
     padding-left: 22px;
     padding-top: 5px;
   }
+  .navigation__menu {
+    box-shadow: 0 12px 8px #adadad !important;
+  }
   .portfolio .portfolio__container {
     gap: 15px !important;
     margin: 0 auto;
@@ -756,6 +772,9 @@ img {
   }
   .footer__container .footer__content {
     flex-basis: calc((100% - 30px) / 2) !important;
+  }
+  .header__section {
+    width: 361px;
   }
 }
 @media (max-width: 767px) {

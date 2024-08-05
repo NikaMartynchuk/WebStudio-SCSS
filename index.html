@@ -30,21 +30,34 @@
             fill="black" />
         </svg>
       </a>
-      <div class="header__navigation-center">
-        <a class="header__link header__link--active" href="#">Студія</a>
-        <a class="header__link" href="portfolio.html">Портфоліо</a>
-        <a class="header__link" href="#">Контакти</a>
-      </div>
-      <div class="header__navigation-right">
-        <div class="header__contact">
-          <span class="icon-envelope1 header__icon--email"></span>
-          <a class="header__tel" href="mailto:@devstudio.com">info@devstudio.com</a>
-        </div>
-        <div class="header__contact">
-          <span class="icon-Vector header__icon--phone"></span>
-          <a class="header__tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        </div>
-      </div>
+      <section class="header__section">
+        <div class="navigation__wrap">
+            <input type="checkbox" id="toggle">
+            <label class="labe" for="toggle">
+                <span></span>
+            </label>
+            <ul class="navigation__menu">
+                <li class="navigation__link">
+                    <a href="index.html" class="navigation__btn header__link">Студія</a>
+                </li>
+                <li class="navigation__link">
+                    <a class="header__link" id="e" href="#">
+                        <a href="portfolio.html" class="navigation__btn header__link-text">Портфоліо</a>
+                    </a>
+                </li>
+                <li class="navigation__link">
+                    <a href="" class="navigation__btn header__link jh">Контакти</a>
+                </li>
+                    <li class="navigation__link header__contact">
+                        <span class="header__icon icon-envelope1"></span>
+                        <a class="navigation__btn header__email" href="mailto:@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="navigation__link header__contact">
+                        <span class="header__icon icon-Vector"></span>
+                        <a href="tel:+380961111111" class="header__phone navigation__btn">+38 096 111 11 11</a>
+                    </li>
+            </ul>
+    </section>
     </div>
   </header>
 
@@ -63,7 +76,7 @@
               <form class="modal__form">
                 <a class="modal__label">Ім'я</a>
                   <div class="modal__div">
-                    <label>
+                    <label class="www">
                       <span class="icon-person-black-18dp-1 rrt"></span>
                       <input class="modal__input" type="text" name="name" minlength="3" required
                         pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
@@ -72,7 +85,7 @@
       
                   <a class="modal__label">Телефон </a>
                       <div class="modal__div">
-                        <label>
+                        <label class="www">
                     <span class="icon-Vector-1 rtt"></span>
                     <input class="modal__input" type="tel" name="phone" required min="10" max="20">
                   </label>
@@ -80,13 +93,13 @@
       
                   <a class="modal__label">Пошта </a>
                   <div class="modal__div">
-                    <label>
+                    <label class="www">
                     <span class="icon-Vector-2 rt"></span>
                     <input class="modal__input" type="email" name="email">
                   </label>
       
                   <a class="modal__label">Коментар</a>
-                  <label>
+                  <label class="www">
                     <textarea  type="email" class="modal__textarea" name="comment" placeholder="Введіть текст"></textarea>
                   </label>
       
@@ -115,18 +128,18 @@
           <p class="features__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
           </p>
         </div>
-        <div class="features__item">
+        <div class="features__item" id="one">
           <img src="photos/group2.jpg" id="one">
           <h5 class="features__title">ПУНКТУАЛЬНІСТЬ</h5>
           <p class="features__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
           </p>
         </div>
-        <div class="features__item">
+        <div class="features__item" id="one">
           <img src="photos/group3.jpg" id="one">
           <h5 class="features__title">ПЛАНУВАННЯ</h5>
           <p class="features__description">Так само консультація з широким активом значною мірою зумовлює.</p>
         </div>
-        <div class="features__item">
+        <div class="features__item" id="one">
           <img src="photos/group1.jpg" id="one">
           <h5 class="features__title">СУЧАСНI ТЕХНОЛОГІЇ</h5>
           <p class="features__description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.

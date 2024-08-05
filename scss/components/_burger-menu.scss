@@ -39,6 +39,7 @@
   }
   
   .navigation__menu {
+    margin-top: 8px !important;
     list-style: none;
     display: flex;
     align-items: center;
@@ -46,7 +47,7 @@
   }
   
   input[type=checkbox],
-  label {
+  .labe {
     display: none;
   }
   
@@ -135,7 +136,7 @@
   }
   /* mobile menu */
   @media (max-width: 868px) {
-    label {
+    .labe {
       display: block;
       height: 30px;
       width: 30px;
@@ -144,23 +145,27 @@
       z-index: 10;
     }
 
+    .header__logo{
+      margin-left: 50px;
+    }
+
     .header{
       justify-content: space-between;
     }
-    
+
     .icon-Vector{
 padding-left: 0 !important;
     }
-    label:hover {
+    .labe:hover {
       cursor: pointer;
       z-index: 101;
     }
-    label span {
+    .labe span {
       top: 15px;
     }
-    label span,
-    label span::before,
-    label span::after {
+    .labe span,
+    .labe span::before,
+    .labe span::after {
       content: "";
       display: block;
       width: 25px;
@@ -170,10 +175,10 @@ padding-left: 0 !important;
       right: 0;
       transition: 0.3s;
     }
-    label span::before {
+    .labe span::before {
       top: -8px;
     }
-    label span::after {
+    .labe span::after {
       top: 8px;
     }
     .navigation__menu {
@@ -189,15 +194,15 @@ padding-left: 0 !important;
       flex-direction: column;
       z-index: 100;
     }
-    input[type=checkbox]:checked ~ label span {
+    input[type=checkbox]:checked ~ .labe span {
       transform: rotate(-45deg);
       z-index: 101;
     }
-    input[type=checkbox]:checked ~ label span::before {
+    input[type=checkbox]:checked ~ .labe span::before {
       top: 0;
       transform: rotate(0);
     }
-    input[type=checkbox]:checked ~ label span::after {
+    input[type=checkbox]:checked ~ .labe   span::after {
       top: 0;
       transform: rotate(90deg);
     }
@@ -205,12 +210,12 @@ padding-left: 0 !important;
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100% !important;
       padding: 20px;
       background: #fff;
       margin: 0;
       padding: 0;
-      box-shadow: 0 12px 8px #a9a9a9;
+      box-shadow: 0 12px 8px #2f2f2f;
     }
     .navigation__menu li {
       margin: 15px 0;
