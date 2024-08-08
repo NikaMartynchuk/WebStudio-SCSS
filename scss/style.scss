@@ -11,9 +11,7 @@
 @import  'components/burger-menu';
 
 @media (max-width: 400px) {
-.navigation__wrap{
-    width: 67px !important;
-}
+
 }
 
 @media (max-width: 1500px) {
@@ -22,9 +20,7 @@
       width: 643px;
     }
   
-    .navigation__wrap{
-      width: 691px;
-    }
+
   
     .navigation__menu{
       width: 710px;
@@ -32,6 +28,18 @@
   }
 
 @media (max-width: 1230px) {
+
+    .labe{
+        margin-right: 40px;
+      }
+
+    .header{
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .header__container{
+        justify-content: space-between;
+    }
 
     .footer__label{
         margin-left: 201px;
@@ -130,9 +138,15 @@
     margin: 20px 0 !important;
     }
 
+    .ed{
+        color: #3791db !important;
+    }
+
     .intro__title{
         width: auto !important;
     }
+
+
 
     .clients__logos{
         width: 542px !important;
@@ -153,10 +167,13 @@
 
 @media (max-width: 991px) {
 
-    
-      .navigation__wrap{
-        width: 491px;
+    .heaader__email{ }
+
+    .header__logo{
+        margin-right: 0 !important;
       }
+    
+
     
       .navigation__menu{
         width: 604px;
@@ -275,16 +292,9 @@ width: 700px;
 
 @media (max-width: 767px) {
 
-    .navigation__wrap{
-        width: 310px !important;
-    }
 }
 
 @media (max-width: 575px) {
-
-    .navigation__wrap{
-        width: 70px !important;
-    }
 
     .features__container{
         flex-direction: column !important;

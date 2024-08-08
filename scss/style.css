@@ -718,7 +718,7 @@
 
 .navigation__btn {
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
   border: 2px solid white;
   border-radius: 70px;
@@ -729,13 +729,41 @@
 
 .navigation__btn:nth-child(1) {
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
   border: none;
   border-radius: 70px;
   margin-right: 10px;
   text-decoration: none;
   display: inline-block;
+}
+
+.header__phone,
+.header__email {
+  color: rgb(85, 85, 85) !important;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+
+.header__phone:hover,
+.header__email:hover {
+  color: #3791db !important;
+  font-weight: 800;
+  font-size: 17px !important;
+}
+
+.header__icon {
+  display: none;
+}
+
+@media (min-width: 991px) {
+  .mobile__menu__container {
+    display: none !important;
+  }
+}
+.header__email {
+  margin-top: 40px;
 }
 
 .jh {
@@ -756,8 +784,9 @@
   margin-top: 8px !important;
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  position: fixed !important;
 }
 
 input[type=checkbox],
@@ -796,6 +825,10 @@ input[type=checkbox],
   position: relative;
   width: 150px;
   margin: 0 auto;
+}
+
+.navigation__link {
+  margin-left: 20px !important;
 }
 
 .partner__img {
@@ -854,15 +887,25 @@ input[type=checkbox],
     display: block;
     height: 30px;
     width: 30px;
-    margin-left: auto;
     position: relative;
-    z-index: 10;
   }
   .header__logo {
     margin-left: 50px;
   }
   .header {
     justify-content: space-between;
+  }
+  .mobile__menu__container {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .mobile__menu--components {
+    color: #3791db;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 400;
   }
   .icon-Vector {
     padding-left: 0 !important;
@@ -918,19 +961,22 @@ input[type=checkbox],
   .navigation__menu {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100% !important;
+    left: 58%;
+    width: 362px !important;
     padding: 20px;
     background: #fff;
     margin: 0;
     padding: 0;
-    box-shadow: 0 12px 8px #2f2f2f;
+    box-shadow: 0 12px 8px rgba(47, 47, 47, 0.1921568627);
   }
   .navigation__menu li {
-    margin: 15px 0;
+    margin: 10px 0;
   }
   .navigation__btn {
     color: black !important;
+  }
+  .ed {
+    margin-top: 30px;
   }
 }
 /* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
@@ -977,9 +1023,6 @@ input[type=checkbox],
   .partner__item {
     flex-basis: calc((100% - 50px) / 2);
   }
-  .header__container {
-    width: 670px;
-  }
 }
 /* Стилі для великих екранів (ПК, дисплей 992рх і більше) */
 @media (min-width: 992px) {
@@ -993,24 +1036,27 @@ input[type=checkbox],
     flex-basis: calc((100% - 75px) / 4);
   }
 }
-/* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) */ 
-@media (max-width: 400px) {
-  .navigation__wrap {
-    width: 67px !important;
-  }
-}
+/* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) */
+
 @media (max-width: 1500px) {
   .header__section {
     width: 643px;
-  }
-  .navigation__wrap {
-    width: 691px;
   }
   .navigation__menu {
     width: 710px;
   }
 }
 @media (max-width: 1230px) {
+  .labe {
+    margin-right: 40px;
+  }
+  .header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .header__container {
+    justify-content: space-between;
+  }
   .footer__label {
     margin-left: 201px;
   }
@@ -1087,6 +1133,9 @@ input[type=checkbox],
     flex-basis: calc((100% - 30px) / 2) !important;
     margin: 20px 0 !important;
   }
+  .ed {
+    color: #3791db !important;
+  }
   .intro__title {
     width: auto !important;
   }
@@ -1104,8 +1153,8 @@ input[type=checkbox],
   }
 }
 @media (max-width: 991px) {
-  .navigation__wrap {
-    width: 491px;
+  .header__logo {
+    margin-right: 0 !important;
   }
   .navigation__menu {
     width: 604px;
@@ -1197,15 +1246,7 @@ input[type=checkbox],
     width: 100%;
   }
 }
-@media (max-width: 767px) {
-  .navigation__wrap {
-    width: 310px !important;
-  }
-}
 @media (max-width: 575px) {
-  .navigation__wrap {
-    width: 70px !important;
-  }
   .features__container {
     flex-direction: column !important;
   }

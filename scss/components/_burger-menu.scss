@@ -1,287 +1,371 @@
-.navigation{
-    text-align: center;
-    padding: 10px;
+.navigation {
+  text-align: center;
+  padding: 10px;
+}
+
+.navigation__btn {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 700;
+  border: 2px solid white;
+  border-radius: 70px;
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navigation__btn:nth-child(1) {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  border-radius: 70px;
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header__phone,
+.header__email {
+  color: rgb(85, 85, 85) !important;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+
+.header__phone:hover,
+.header__email:hover {
+  color: #3791db !important;
+  font-weight: 800;
+  font-size: 17px !important;
+}
+
+.header__icon {
+  display: none;
+}
+
+@media(min-width: 991px) {
+  .mobile__menu__container {
+    display: none !important;
   }
-  
-  .navigation__btn {
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: 700;
-    border: 2px solid white;
-    border-radius: 70px;
-    margin-right: 10px;
-    text-decoration: none;
-    display: inline-block;
+
+}
+
+.header__email {
+  margin-top: 40px;
+}
+
+.jh {
+  padding-right: 70px;
+}
+
+.share {
+  padding: 138px 0;
+  text-align: center;
+  color: white;
+}
+
+.navigation__logo {
+  display: none;
+}
+
+.navigation__menu {
+  margin-top: 8px !important;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: fixed !important;
+}
+
+input[type=checkbox],
+.labe {
+  display: none;
+}
+
+.share__title {
+  text-transform: uppercase;
+}
+
+.share__btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  border: 2px solid #FF4E50;
+  background-color: #FF4E50;
+  color: white;
+  border-radius: 70px;
+}
+
+.partners {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.partner__list {
+  list-style: none;
+  padding: 0;
+}
+
+.thumb {
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.navigation__link {
+  margin-left: 20px !important;
+}
+
+.partner__img {
+  width: 100%;
+}
+
+.partner__icon_one {
+  background-color: #FF4E50;
+}
+
+.partner__icon_two {
+  background-color: #FFA507;
+}
+
+.partner__icon_tree {
+  background-color: #1CD7AD;
+}
+
+.partner__icon_four {
+  background-color: #4E73DB;
+}
+
+.partners__btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  border: 2px solid #FF4E50;
+  background-color: white;
+  color: #FF4E50;
+  border-radius: 70px;
+}
+
+/* Стилі для малих екранів (телефони в альбомній оріентації, дисплей 576рх і більше) */
+@media (min-width: 576px) {
+  .share__title {
+    padding: 0 90px;
   }
-  
-  .navigation__btn:nth-child(1) {
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: 700;
-    border: none;
-    border-radius: 70px;
-    margin-right: 10px;
-    text-decoration: none;
-    display: inline-block;
+
+  .share__btn,
+  .partners__btn {
+    width: auto;
+    padding: 10px 20px;
   }
-  
-  .jh{
-    padding-right: 70px;
+
+  .partner__title {
+    padding: 0 100px;
   }
-  .share {
-    padding: 138px 0;
-    text-align: center;
-    color: white;
+
+  .partner_desc {
+    padding: 0 150px;
   }
-  
-  .navigation__logo {
-    display: none;
+}
+
+/* mobile menu */
+@media (max-width: 868px) {
+  .labe {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
   }
-  
-  .navigation__menu {
-    margin-top: 8px !important;
-    list-style: none;
-    display: flex;
-    align-items: center;
+
+  .header__logo {
+    margin-left: 50px;
+  }
+
+  .header {
     justify-content: space-between;
   }
-  
-  input[type=checkbox],
-  .labe {
+
+  .mobile__menu__container {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .mobile__menu--components {
+    color: #3791db;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .icon-Vector {
+    padding-left: 0 !important;
+  }
+
+  .labe:hover {
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  .labe span {
+    top: 15px;
+  }
+
+  .labe span,
+  .labe span::before,
+  .labe span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+  }
+
+  .labe span::before {
+    top: -8px;
+  }
+
+  .labe span::after {
+    top: 8px;
+  }
+
+  .navigation__menu {
     display: none;
   }
-  
-  .share__title {
-    text-transform: uppercase;
-  }
-  
-  .share__btn {
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 10px 0px;
-    text-align: center;
-    width: 100%;
-    border: 2px solid #FF4E50;
-    background-color: #FF4E50;
-    color: white;
-    border-radius: 70px;
-  }
-  
-  .partners {
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  .partner__list {
-    list-style: none;
+
+  .jh {
     padding: 0;
   }
-  
-  .thumb {
-    position: relative;
-    width: 150px;
+
+  input[type=checkbox]:checked~.navigation__menu {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  input[type=checkbox]:checked~.labe span {
+    transform: rotate(-45deg);
+    z-index: 101;
+  }
+
+  input[type=checkbox]:checked~.labe span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  input[type=checkbox]:checked~.labe span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .navigation__menu {
+    position: absolute;
+    top: 0;
+    left: 58%;
+    width: 362px !important;
+    padding: 20px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 12px 8px #2f2f2f31;
+  }
+
+  .navigation__menu li {
+    margin: 10px 0;
+  }
+
+  .navigation__btn {
+    color: black !important;
+  }
+
+  .ed {
+    margin-top: 30px;
+  }
+}
+
+/* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
+@media (min-width: 768px) {
+  .container {
+    padding: 0;
+    width: 470px;
     margin: 0 auto;
   }
-  
-  .partner__img {
-    width: 100%;
+
+  .share__logo {
+    display: none;
   }
-  
-  .partner__icon_one {
-    background-color: #FF4E50;
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  
-  .partner__icon_two {
-    background-color: #FFA507;
-  }
-  
-  .partner__icon_tree {
-    background-color: #1CD7AD;
-  }
-  
-  .partner__icon_four {
-    background-color: #4E73DB;
-  }
-  
-  .partners__btn {
+
+  .navigation__logo {
+    display: inline;
+    font-size: 20px;
     color: white;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 10px 0px;
-    text-align: center;
-    width: 100%;
-    border: 2px solid #FF4E50;
-    background-color: white;
-    color: #FF4E50;
-    border-radius: 70px;
   }
-  
-  /* Стилі для малих екранів (телефони в альбомній оріентації, дисплей 576рх і більше) */
-  @media (min-width: 576px) {
-    .share__title {
-      padding: 0 90px;
-    }
-    .share__btn,
-    .partners__btn {
-      width: auto;
-      padding: 10px 20px;
-    }
-    .partner__title {
-      padding: 0 100px;
-    }
-    .partner_desc {
-      padding: 0 150px;
-    }
+
+  .partner_desc,
+  .partner__title {
+    padding: 0;
   }
-  /* mobile menu */
-  @media (max-width: 868px) {
-    .labe {
-      display: block;
-      height: 30px;
-      width: 30px;
-      margin-left: auto;
-      position: relative;
-      z-index: 10;
-    }
 
-    .header__logo{
-      margin-left: 50px;
-    }
-
-    .header{
-      justify-content: space-between;
-    }
-
-    .icon-Vector{
-padding-left: 0 !important;
-    }
-    .labe:hover {
-      cursor: pointer;
-      z-index: 101;
-    }
-    .labe span {
-      top: 15px;
-    }
-    .labe span,
-    .labe span::before,
-    .labe span::after {
-      content: "";
-      display: block;
-      width: 25px;
-      height: 2px;
-      background: #333;
-      position: absolute;
-      right: 0;
-      transition: 0.3s;
-    }
-    .labe span::before {
-      top: -8px;
-    }
-    .labe span::after {
-      top: 8px;
-    }
-    .navigation__menu {
-      display: none;
-    }
-
-    .jh{
-      padding: 0;
-    }
-
-    input[type=checkbox]:checked ~ .navigation__menu {
-      display: flex;
-      flex-direction: column;
-      z-index: 100;
-    }
-    input[type=checkbox]:checked ~ .labe span {
-      transform: rotate(-45deg);
-      z-index: 101;
-    }
-    input[type=checkbox]:checked ~ .labe span::before {
-      top: 0;
-      transform: rotate(0);
-    }
-    input[type=checkbox]:checked ~ .labe   span::after {
-      top: 0;
-      transform: rotate(90deg);
-    }
-    .navigation__menu {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100% !important;
-      padding: 20px;
-      background: #fff;
-      margin: 0;
-      padding: 0;
-      box-shadow: 0 12px 8px #2f2f2f;
-    }
-    .navigation__menu li {
-      margin: 15px 0;
-    }
-    .navigation__btn {
-      color: black !important;
-    }
+  .share__title {
+    padding: 0 50px;
+    font-size: 52px;
+    margin-bottom: 15px;
   }
-  /* Стилі для середніх екранів (планшети, дисплей 768рх і більше) */
-  @media (min-width: 768px) {
-    .container {
-      padding: 0;
-      width: 470px;
-      margin: 0 auto;
-    }
-    .share__logo {
-      display: none;
-    }
-    .navigation {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .navigation__logo {
-      display: inline;
-      font-size: 20px;
-      color: white;
-    }
-    .partner_desc,
-    .partner__title {
-      padding: 0;
-    }
-    .share__title {
-      padding: 0 50px;
-      font-size: 52px;
-      margin-bottom: 15px;
-    }
-    .share_desc {
-      font-size: 24px;
-    }
-    .share {
-      padding-top: 126px;
-    }
-    .partner__list {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 50px;
-    }
-    .partner__item {
-      flex-basis: calc((100% - 50px) / 2);
-    }
-    .header__container {
-      width: 670px;
-    }
+
+  .share_desc {
+    font-size: 24px;
   }
-  /* Стилі для великих екранів (ПК, дисплей 992рх і більше) */
-  @media (min-width: 992px) {
-    .container {
-      width: 914px;
-    }
-    .partner__list {
-      gap: 25px;
-    }
-    .partner__item {
-      flex-basis: calc((100% - 75px) / 4);
-    }
+
+  .share {
+    padding-top: 126px;
   }
-  /* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) *//*# sourceMappingURL=portfolio.css.map */
+
+  .partner__list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .partner__item {
+    flex-basis: calc((100% - 50px) / 2);
+  }
+
+
+}
+
+/* Стилі для великих екранів (ПК, дисплей 992рх і більше) */
+@media (min-width: 992px) {
+  .container {
+    width: 914px;
+  }
+
+
+
+  .partner__list {
+    gap: 25px;
+  }
+
+  .partner__item {
+    flex-basis: calc((100% - 75px) / 4);
+  }
+}
+
+/* Стилі для дуже великих екранів (ПК з великим монітором, дисплей 1200рх і більше) */
+/*# sourceMappingURL=portfolio.css.map */
