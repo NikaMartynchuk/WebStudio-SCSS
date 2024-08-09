@@ -1,12 +1,19 @@
 .intro {
   background-image: linear-gradient(to right,
       $underlayer-color,
-      $underlayer-color),
-    url(../photos/img16.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: $root-color-two;
+      $underlayer-color), url(/photos/background@1x.jpg);
   padding: 140px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('/photos/background@2x.jpg');
+    }
 
   .intro__article {
     position: relative;
